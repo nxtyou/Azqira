@@ -7,7 +7,8 @@ defineProps({
 <template>
   <a
     href="/"
-    class="bg-black text-white px-4 py-3 rounded-full whitespace-nowrap"
+    class="block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center"
+    :class="[size === 'small' ? 'px-5 py-3' : 'px-20 py-4 w-full']"
   >
     <slot></slot>
   </a>
