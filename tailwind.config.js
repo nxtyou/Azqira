@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         black: "#202028",
         zeus: "#17120E",
+        pampas: "#F2EFE8",
       },
     },
   },

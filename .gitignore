@@ -28,3 +28,5 @@ coverage
 *.sw?
 
 .vscode
+# Local Netlify folder
+.netlify
