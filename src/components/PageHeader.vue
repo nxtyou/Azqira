@@ -12,9 +12,9 @@ import MenuIconVue from "./icons/MenuIcon.vue";
       <a href="/careers">Careers</a>
       <a href="/support">Support</a>
     </nav>
-    <div class="space-x-4 hidden md:flex items-center">
+    <div class="space-x-6 hidden md:flex items-center">
       <a href="/">Login</a>
-      <PrimaryButtonVue size="small"> Get started now</PrimaryButtonVue>
+      <PrimaryButtonVue size="small">Get started now</PrimaryButtonVue>
     </div>
     <button
       aria-label="Toggle Menu"
