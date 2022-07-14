@@ -14,4 +14,5 @@ import FractionalInvestingSectionView from "./components/FractionalInvestingSect
 
 <style>
 @import "./assets/css/tailwind.min.css";
+@import "./assets/css/animate.min.css";
 </style>

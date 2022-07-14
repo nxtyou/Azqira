@@ -12,22 +12,24 @@
             src="../assets/images/banner.jpg"
             width="1402"
             height="560"
+            alt=""
           />
           <img
             class="lg:hidden object-cover w-full h-80 md:h-[35rem] hover:scale-105 duration-700 relative"
             src="../assets/images/banner-mobile.jpg"
             width="646"
             height="560"
+            alt=""
           />
         </div>
       </div>
       <div class="max-w-4xl mx-auto space-y-20 px-6 py-20 md:py-24">
         <div class="space-y-4">
-          <h3 class="font-medium text-2xl">
+          <h2 class="font-medium text-2xl">
             We make investing a community lifestyle by connecting people with
             global first-class real estate.
-          </h3>
-          <p class="md:leading-7">
+          </h2>
+          <p class="md:leading-7 wow animate__animated animate__fadeInUp">
             The opportunity to invest in luxury real estate has never been more
             significant. With a portfolio that deals exclusively in projects
             involving hotels, resorts, and other first-class travel
@@ -38,7 +40,7 @@
         <div
           class="flex items-center flex-col md:flex-row space-y-16 md:space-y-0 md:space-x-24"
         >
-          <div class="space-y-4">
+          <div class="space-y-4 wow animate__animated animate__fadeInUp">
             <h2 class="font-bold text-4xl">
               The easiest way to invest in luxus real estate
             </h2>
@@ -49,6 +51,7 @@
             </p>
           </div>
           <img
+            class="wow animate__animated animate__fadeInUp"
             src="../assets/images/shares-calc.svg"
             width="308"
             height="376"

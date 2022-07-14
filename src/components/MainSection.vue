@@ -4,9 +4,14 @@ import PrimaryButtonVue from "./PrimaryButton.vue";
 
 <template>
   <section class="max-w-7xl mx-auto px-6 space-y-8 py-16 md:py-24 md:pl-32">
-    <h1 class="md:text-6xl text-5xl font-medium max-w-3xl">
+    <h1
+      class="md:text-6xl text-5xl font-medium max-w-3xl wow animate__animated animate__fadeInUp"
+    >
       Invest where others spend their holidays
     </h1>
-    <PrimaryButtonVue>Get started now</PrimaryButtonVue>
+    <PrimaryButtonVue
+      class="relative z-10 wow animate__animated animate__fadeInUp"
+      >Get started now</PrimaryButtonVue
+    >
   </section>
 </template>
