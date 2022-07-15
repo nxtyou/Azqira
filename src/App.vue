@@ -1,15 +1,17 @@
 <script setup>
 import PageHeader from "./components/PageHeader.vue";
-import MainSectionVue from "./components/MainSection.vue";
-import BannerSectionVue from "./components/BannerSection.vue";
-import FractionalInvestingSectionView from "./components/FractionalInvestingSection.vue";
+import MainSection from "./components/MainSection.vue";
+import BannerSection from "./components/BannerSection.vue";
+import FractionalInvestingSection from "./components/FractionalInvestingSection.vue";
+import BusinessModelSection from "./components/BusinessModelSection/index.vue";
 </script>
 
 <template>
   <PageHeader />
-  <MainSectionVue />
-  <BannerSectionVue />
-  <FractionalInvestingSectionView />
+  <MainSection />
+  <BannerSection />
+  <FractionalInvestingSection />
+  <BusinessModelSection />
 </template>
 
 <style>
