@@ -1,29 +1,201 @@
 <!DOCTYPE html>
-<html lang="en" class="text-[15px] md:text-[16px]">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AZQIRA</title>
-    <meta name="description" content="" />
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AZQIRA</title>
+        <meta name="description" content="AZQIRA" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <script type="module" crossorigin src="/assets/index.45cd0867.js"></script>
-    <link rel="stylesheet" href="/assets/index.2fce079a.css">
-  </head>
-  <body class="font-aktiv text-black">
-    <div id="app"></div>
-    
-    <script src="/js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/tailwind.min.css" />
+        <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    </head>
+    <body>
+        <header class="flex items-center justify-between mx-auto space-x-4 py-6 px-6 max-w-7xl">
+            <img src="./assets/images/logo.svg" alt="AZQIRA" width="160" height="32" />
+            <nav class="space-x-4 hidden md:block">
+                <a href="/about" class="font-bold">About</a>
+                <a href="/careers">Careers</a>
+                <a href="/support">Support</a>
+            </nav>
+            <div class="space-x-6 hidden md:flex items-center">
+                <a href="/">Login</a>
+                <a href="/" class="block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-5 py-3">Get started now</a>
+            </div>
+            <button aria-label="Toggle Menu" class="md:hidden order-2 text-gray-500 w-10 h-10 relative focus:outline-none mr-6">
+                <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 animate-top-line">
+                    <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out top-line"></span>
+                    <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out middle-line"></span>
+                    <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out bottom-line"></span>
+                </div>
+            </button>
+        </header>
+
+        <section class="max-w-7xl mx-auto px-6 space-y-8 py-16 md:py-24 md:pl-32">
+            <h1 class="md:text-6xl text-5xl font-medium max-w-3xl wow animate__animated animate__fadeInUp">Invest where others spend their holidays</h1>
+            <a href="/" class="block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-20 py-4 w-full relative z-10 wow animate__animated animate__fadeInUp">Get started now</a>
+        </section>
+
+        <section class="bg-pampas">
+            <div class="relative bg-zeus text-white rounded-bl-[2rem]">
+                <div class="before:content-[''] before:h-16 md:before:h-[17.5rem] before:bg-white before:absolute before:inset-0 before:w-full">
+                    <div class="mr-8 rounded-r-3xl md:mr-[calc(100%-85vw)] w-auto overflow-hidden">
+                        <img class="hidden lg:block object-cover w-full h-[35rem] hover:scale-105 duration-700 relative" src="../assets/images/banner.jpg" width="1402" height="560" alt="" />
+                        <img class="lg:hidden object-cover w-full h-80 md:h-[35rem] hover:scale-105 duration-700 relative" src="../assets/images/banner-mobile.jpg" width="646" height="560" alt="" />
+                    </div>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-20 px-6 py-20 md:py-24">
+                    <div class="space-y-4">
+                        <h2 class="font-medium text-2xl">We make investing a community lifestyle by connecting people with global first-class real estate.</h2>
+                        <p class="md:leading-7 wow animate__animated animate__fadeInUp">
+                            The opportunity to invest in luxury real estate has never been more significant. With a portfolio that deals exclusively in projects involving hotels, resorts, and other first-class travel destinations. Now you can make money where others spend their holidays.
+                        </p>
+                    </div>
+                    <div class="flex items-center flex-col md:flex-row space-y-16 md:space-y-0 md:space-x-24">
+                        <div class="space-y-4 wow animate__animated animate__fadeInUp">
+                            <h2 class="font-bold text-4xl">The easiest way to invest in luxus real estate</h2>
+                            <p class="md:leading-7">A fractional investment makes real estate accessible for everyone. By splitting an investment into smaller pieces, you can acquire a fraction of the project based on your budget.</p>
+                        </div>
+                        <img class="wow animate__animated animate__fadeInUp" src="../assets/images/shares-calc.svg" width="308" height="376" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-pampas">
+            <div class="max-w-sm md:max-w-4xl mx-auto py-20 md:py-32 flex flex-col md:flex-row items-center md:space-x-8 lg:space-x-24 px-6">
+                <img class="md:w-1/2 order-2 md:order-1 mt-32 sm:mt-16 md:mt-0 wow animate__animated animate__fadeInLeft" width="361" height="205" src="./assets/images/credit-card.svg" alt="" />
+                <div class="space-y-4 md:w-1/2 md:order-2 wow animate__animated animate__fadeInUp">
+                    <h2 class="font-bold text-4xl">What is fractional investig?</h2>
+                    <p class="text-sm md:leading-6">Fractional investing also allows our partners to access funding for expansion and other projects. By doing so, we increase the value & your investments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 md:pt-32 px-6">
+            <div class="max-w-6xl mx-auto bg-cold-gray text-white text-center rounded-[2rem] py-16 px-6">
+                <div class="space-y-16 max-w-3xl mx-auto">
+                    <h2 class="font-bold text-4xl wow animate__animated animate__fadeInUp">Our business model briefly explained</h2>
+                    <div class="flex items-center flex-col md:flex-row space-y-8 md:space-y-0 justify-around wow animate__animated animate__fadeInUp">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
+                                <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 md:w-auto h-auto" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.4192 6.16142L15.8837 2.62588C15.3955 2.13773 14.604 2.13773 14.1159 2.62588L10.5803 6.16142C10.0922 6.64957 10.0922 7.44103 10.5803 7.92918L14.1159 11.4647C14.604 11.9529 15.3955 11.9529 15.8837 11.4647L19.4192 7.92918C19.9073 7.44103 19.9073 6.64957 19.4192 6.16142Z"
+                                        stroke="#27D17E"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M11.4645 14.1165L7.92894 10.581C7.44078 10.0928 6.64933 10.0928 6.16117 10.581L2.62564 14.1165C2.13748 14.6046 2.13748 15.3961 2.62564 15.8843L6.16117 19.4198C6.64933 19.908 7.44078 19.908 7.92894 19.4198L11.4645 15.8843C11.9526 15.3961 11.9526 14.6046 11.4645 14.1165Z"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M27.3739 14.1165L23.8384 10.581C23.3502 10.0928 22.5588 10.0928 22.0706 10.581L18.5351 14.1165C18.0469 14.6046 18.0469 15.3961 18.5351 15.8843L22.0706 19.4198C22.5588 19.908 23.3502 19.908 23.8384 19.4198L27.3739 15.8843C27.8621 15.3961 27.8621 14.6046 27.3739 14.1165Z"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M19.4192 22.0716L15.8837 18.536C15.3955 18.0479 14.604 18.0479 14.1159 18.536L10.5803 22.0716C10.0922 22.5597 10.0922 23.3512 10.5803 23.8393L14.1159 27.3749C14.604 27.863 15.3955 27.863 15.8837 27.3749L19.4192 23.8393C19.9073 23.3512 19.9073 22.5597 19.4192 22.0716Z"
+                                        stroke="#27D17E"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
+                            <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
+                            </ul>
+                        </div>
+
+                        <svg class="rotate-90 md:rotate-0" width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 13a1 1 0 1 0 0-2v2ZM3 11a1 1 0 1 0 0 2v-2Zm18 0H3v2h18v-2Z" fill="#fff" />
+                            <path
+                                d="M7.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM3 12l-.707-.707a1 1 0 0 0 0 1.414L3 12Zm5.707-4.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm0 8.586-5-5-1.414 1.414 5 5 1.414-1.414Zm-5-3.586 5-5-1.414-1.414-5 5 1.414 1.414ZM3 26a1 1 0 1 0 0 2v-2Zm18 2a1 1 0 1 0 0-2v2ZM3 28h18v-2H3v2Z"
+                                fill="#fff"
+                            />
+                            <path d="M16.707 21.293a1 1 0 0 0-1.414 1.414l1.414-1.414ZM21 27l.707.707a1 1 0 0 0 0-1.414L21 27Zm-5.707 4.293a1 1 0 0 0 1.414 1.414l-1.414-1.414Zm0-8.586 5 5 1.414-1.414-5-5-1.414 1.414Zm5 3.586-5 5 1.414 1.414 5-5-1.414-1.414Z" fill="#fff" />
+                        </svg>
+
+                        <div class="flex flex-col items-center">
+                            <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
+                                <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 md:w-auto h-auto" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.179 10.977a5.204 5.204 0 0 0-.214-.219 62.212 62.212 0 0 1-3.234-3.215 62.884 62.884 0 0 1-3.173-3.676 4.885 4.885 0 0 0-1.873-1.468A4.616 4.616 0 0 0 13.812 2c-.642 0-1.278.135-1.872.399a4.885 4.885 0 0 0-1.873 1.468 61.539 61.539 0 0 1-6.407 6.892 5.458 5.458 0 0 0-1.65 3.609 5.546 5.546 0 0 0 1.009 3.561c.728 1.017 1.777 1.717 2.952 1.968a4.663 4.663 0 0 0 3.433-.601 8.372 8.372 0 0 1 4.409-1.261 8.372 8.372 0 0 1 4.409 1.26 4.664 4.664 0 0 0 3.432.602c1.175-.251 2.224-.95 2.952-1.968a5.546 5.546 0 0 0 1.008-3.562 5.458 5.458 0 0 0-1.435-3.39Z"
+                                        stroke="#27D17E"
+                                        stroke-width="3"
+                                    />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
+                            <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
+                            </ul>
+                        </div>
+
+                        <svg class="rotate-90 md:rotate-0" width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 13a1 1 0 1 0 0-2v2ZM3 11a1 1 0 1 0 0 2v-2Zm18 0H3v2h18v-2Z" fill="#fff" />
+                            <path
+                                d="M7.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM3 12l-.707-.707a1 1 0 0 0 0 1.414L3 12Zm5.707-4.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm0 8.586-5-5-1.414 1.414 5 5 1.414-1.414Zm-5-3.586 5-5-1.414-1.414-5 5 1.414 1.414ZM3 26a1 1 0 1 0 0 2v-2Zm18 2a1 1 0 1 0 0-2v2ZM3 28h18v-2H3v2Z"
+                                fill="#fff"
+                            />
+                            <path d="M16.707 21.293a1 1 0 0 0-1.414 1.414l1.414-1.414ZM21 27l.707.707a1 1 0 0 0 0-1.414L21 27Zm-5.707 4.293a1 1 0 0 0 1.414 1.414l-1.414-1.414Zm0-8.586 5 5 1.414-1.414-5-5-1.414 1.414Zm5 3.586-5 5 1.414 1.414 5-5-1.414-1.414Z" fill="#fff" />
+                        </svg>
+
+                        <div class="flex flex-col items-center">
+                            <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
+                                <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 md:w-auto h-auto" width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.25 15.284c2.913.687 5 2.539 5 4.716" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1.75 20c0-2.761 3.358-5 7.5-5 4.142 0 7.5 2.239 7.5 5" stroke="#27D17E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.75 11.25a5 5 0 0 0 0-10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.25 11.25a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="#27D17E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
+                            <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
+                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative hidden md:block mx-auto max-w-7xl">
+            <img style="max-width: 1245px" class="w-[100%] mx-auto -mr-[5%]" src="./assets/images/tablet.png" alt="" />
+            <img style="max-width: 599px" class="absolute top-[40%] left-[-4%] z-10 w-[50%] lax lax_preset_fadeIn:50:100 lax_preset_spin" src="./assets/images/phone-1.png" alt="" />
+            <img style="max-width: 789px" class="absolute top-[10%] left-[-4%] w-[60%]" src="./assets/images/phone-2.png" alt="" />
+        </section>
+
+        
+
+        <script src="./assets/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
 </html>

@@ -1,27 +1,26 @@
 {
-  "name": "azqira",
-  "version": "0.0.0",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite --host",
-    "build": "npm run tailwind:build && vite build",
-    "preview": "vite preview --port 4173",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "tailwind": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/tailwind.min.css --watch",
-    "tailwind:build": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/tailwind.min.css --minify"
+    "dev": "tailwindcss -i ./public/assets/css/tailwind.src.css -o ./public/assets/css/tailwind.min.css --watch",
+    "build": "tailwindcss -i ./public/assets/css/tailwind.src.css -o ./public/assets/css/tailwind.min.css --minify"
   },
-  "dependencies": {
-    "vue": "^3.2.37"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evrrnv/portfolio.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evrrnv/portfolio/issues"
+  },
+  "homepage": "https://github.com/evrrnv/portfolio#readme",
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.0",
-    "@vitejs/plugin-vue": "^2.3.3",
-    "@vue/eslint-config-prettier": "^7.0.0",
-    "autoprefixer": "^10.4.7",
-    "eslint": "^8.5.0",
-    "eslint-plugin-vue": "^9.0.0",
-    "postcss": "^8.4.14",
-    "prettier": "^2.5.1",
-    "tailwindcss": "^3.1.6",
-    "vite": "^2.9.12"
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
   }
 }
