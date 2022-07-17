@@ -13,7 +13,10 @@ module.exports = {
           shark: "#1F2123",
           shamrock: "#27D17E",
           silver: "#C9C9C9",
-          "mine-shaft": "#383838"
+          "mine-shaft": "#383838",
+          boulder: "#747474",
+          pampas: "#F2EFE8",
+          karaka: "#24160B"
         },
       },
     },
