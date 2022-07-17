@@ -1,112 +1,80 @@
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-Medium.eot");
-  src: local("AktivGroteskCorp-Medium"),
-    url("../fonts/AktivGroteskCorp-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-Medium.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Medium.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-Medium.eot");
+    src: local("AktivGroteskCorp-Medium"), url("../fonts/AktivGroteskCorp-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Medium.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Medium.woff") format("woff"),
+        url("../fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-Bold.eot");
-  src: local("AktivGroteskCorp-Bold"),
-    url("../fonts/AktivGroteskCorp-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-Bold.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Bold.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-display: swap;
-  font-style: normal;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-Bold.eot");
+    src: local("AktivGroteskCorp-Bold"), url("../fonts/AktivGroteskCorp-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Bold.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Bold.woff") format("woff"), url("../fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-Italic.eot");
-  src: local("AktivGroteskCorp-Italic"),
-    url("../fonts/AktivGroteskCorp-Italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-Italic.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Italic.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-display: swap;
-  font-style: italic;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-Italic.eot");
+    src: local("AktivGroteskCorp-Italic"), url("../fonts/AktivGroteskCorp-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Italic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Italic.woff") format("woff"),
+        url("../fonts/AktivGroteskCorp-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-LightItalic.eot");
-  src: local("AktivGroteskCorp-LightItalic"),
-    url("../fonts/AktivGroteskCorp-LightItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-LightItalic.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-LightItalic.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-display: swap;
-  font-style: italic;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-LightItalic.eot");
+    src: local("AktivGroteskCorp-LightItalic"), url("../fonts/AktivGroteskCorp-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-LightItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-LightItalic.woff") format("woff"),
+        url("../fonts/AktivGroteskCorp-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-MediumItalic.eot");
-  src: local("AktivGroteskCorp-MediumItalic"),
-    url("../fonts/AktivGroteskCorp-MediumItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-MediumItalic.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-MediumItalic.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-display: swap;
-  font-style: italic;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-MediumItalic.eot");
+    src: local("AktivGroteskCorp-MediumItalic"), url("../fonts/AktivGroteskCorp-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-MediumItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-MediumItalic.woff") format("woff"),
+        url("../fonts/AktivGroteskCorp-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-Light.eot");
-  src: local("AktivGroteskCorp-Light"),
-    url("../fonts/AktivGroteskCorp-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-Light.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Light.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-Light.eot");
+    src: local("AktivGroteskCorp-Light"), url("../fonts/AktivGroteskCorp-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Light.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Light.woff") format("woff"),
+        url("../fonts/AktivGroteskCorp-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-Regular.eot");
-  src: local("AktivGroteskCorp-Regular"),
-    url("../fonts/AktivGroteskCorp-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-Regular.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Regular.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-Regular.eot");
+    src: local("AktivGroteskCorp-Regular"), url("../fonts/AktivGroteskCorp-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Regular.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Regular.woff") format("woff"),
+        url("../fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Aktiv Grotesk Corp";
-  src: url("../fonts/AktivGroteskCorp-BoldItalic.eot");
-  src: local("AktivGroteskCorp-BoldItalic"),
-    url("../fonts/AktivGroteskCorp-BoldItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/AktivGroteskCorp-BoldItalic.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-BoldItalic.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-display: swap;
-  font-style: italic;
+    font-family: "Aktiv Grotesk Corp";
+    src: url("../fonts/AktivGroteskCorp-BoldItalic.eot");
+    src: local("AktivGroteskCorp-BoldItalic"), url("../fonts/AktivGroteskCorp-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-BoldItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-BoldItalic.woff") format("woff"),
+        url("../fonts/AktivGroteskCorp-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+    font-style: italic;
 }
 
 @tailwind base;
@@ -114,9 +82,47 @@
 @tailwind utilities;
 
 .top-line {
-  transform: translateY(-0.42rem);
+    transform: translateY(-0.42rem);
 }
 
 .bottom-line {
-  transform: translateY(0.42rem);
+    transform: translateY(0.42rem);
+}
+
+@-webkit-keyframes bullet-ring {
+    0% {
+        stroke-dashoffset: 75;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes bullet-ring {
+    0% {
+        stroke-dashoffset: 75;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.active-tab {
+    color: rgb(36 22 11 / var(--tw-text-opacity));
+}
+
+.active-tab svg {
+    opacity: 1;
+    transform: rotate(-90deg);
+    transition: opacity 0.1s;
+}
+
+.active-tab circle:nth-child(2) {
+    -webkit-animation: bullet-ring;
+    animation: bullet-ring;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }

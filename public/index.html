@@ -20,373 +20,490 @@
         <link rel="stylesheet" href="./assets/css/tailwind.min.css" />
         <link rel="stylesheet" href="./assets/css/animate.min.css" />
     </head>
-    <body class="overflow-x-hidden font-aktiv text-black">
-        <header class="flex items-center justify-between mx-auto space-x-4 py-6 px-6 max-w-7xl">
-            <img src="./assets/images/logo.svg" alt="AZQIRA" width="160" height="32" />
-            <nav class="space-x-4 hidden md:block">
-                <a href="/about" class="font-bold">About</a>
-                <a href="/careers">Careers</a>
-                <a href="/support">Support</a>
-            </nav>
-            <div class="space-x-6 hidden md:flex items-center">
-                <a href="/">Login</a>
-                <a href="/" class="block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-5 py-3">Get started now</a>
-            </div>
-            <button aria-label="Toggle Menu" class="md:hidden order-2 text-gray-500 w-10 h-10 relative focus:outline-none mr-6">
-                <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 animate-top-line">
-                    <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out top-line"></span>
-                    <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out middle-line"></span>
-                    <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out bottom-line"></span>
+    <body class="font-aktiv text-black overflow-x-auto">
+        <div class="overflow-hidden">
+            <header class="flex items-center justify-between mx-auto space-x-4 py-6 px-6 max-w-7xl">
+                <img src="./assets/images/logo.svg" alt="AZQIRA" width="160" height="32" />
+                <nav class="space-x-4 hidden md:block">
+                    <a href="/about" class="font-bold">About</a>
+                    <a href="/careers">Careers</a>
+                    <a href="/support">Support</a>
+                </nav>
+                <div class="space-x-6 hidden md:flex items-center">
+                    <a href="/">Login</a>
+                    <a href="/" class="block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-5 py-3">Get started now</a>
                 </div>
-            </button>
-        </header>
+                <button aria-label="Toggle Menu" class="md:hidden order-2 text-gray-500 w-10 h-10 relative focus:outline-none mr-6">
+                    <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 animate-top-line">
+                        <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out top-line"></span>
+                        <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out middle-line"></span>
+                        <span aria-hidden="true" class="block absolute h-0.5 w-7 bg-black transform transition duration-500 ease-in-out bottom-line"></span>
+                    </div>
+                </button>
+            </header>
 
-        <section class="max-w-7xl mx-auto px-6 space-y-8 py-16 md:py-24 md:pl-32">
-            <h1 class="md:text-6xl text-5xl font-medium max-w-3xl wow animate__animated animate__fadeInUp">Invest where others spend their holidays</h1>
-            <a href="/" class="block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-20 py-4 w-full relative z-10 wow animate__animated animate__fadeInUp">Get started now</a>
-        </section>
+            <section class="max-w-7xl mx-auto px-6 space-y-8 py-16 md:py-24 md:pl-32">
+                <h1 class="md:text-6xl text-5xl font-medium max-w-3xl wow animate__animated animate__fadeInUp">Invest where others spend their holidays</h1>
+                <a href="/" class="block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-20 py-4 w-full relative z-10 wow animate__animated animate__fadeInUp">Get started now</a>
+            </section>
 
-        <section class="bg-pampas">
-            <div class="relative bg-zeus text-white rounded-bl-[2rem]">
-                <div class="before:content-[''] before:h-16 md:before:h-[17.5rem] before:bg-white before:absolute before:inset-0 before:w-full">
-                    <div class="mr-8 rounded-r-3xl md:mr-[calc(100%-85vw)] w-auto overflow-hidden">
-                        <picture>
-                            <source srcset="./assets/images/banner.webp" type="image/webp" />
-                            <source srcset="./assets/images/banner.jpg" type="image/jpeg" />
-                            <img class="hidden lg:block object-cover w-full h-[35rem] hover:scale-105 duration-700 relative" src="./assets/images/banner.jpg" width="1402" height="560" alt="" />
-                        </picture>
-                        <picture>
-                            <source srcset="./assets/images/banner-mobile.webp" type="image/webp" />
-                            <source srcset="./assets/images/banner-mobile.jpg" type="image/jpeg" />
-                            <img class="lg:hidden object-cover w-full h-80 md:h-[35rem] hover:scale-105 duration-700 relative" src="./assets/images/banner-mobile.jpg" width="646" height="560" alt="" />
-                        </picture>
+            <section class="bg-pampas">
+                <div class="relative bg-zeus text-white rounded-bl-[2rem]">
+                    <div class="before:content-[''] before:h-16 md:before:h-[17.5rem] before:bg-white before:absolute before:inset-0 before:w-full">
+                        <div class="mr-8 rounded-r-3xl md:mr-[calc(100%-85vw)] w-auto overflow-hidden">
+                            <picture>
+                                <source srcset="./assets/images/banner.webp" type="image/webp" />
+                                <source srcset="./assets/images/banner.jpg" type="image/jpeg" />
+                                <img class="hidden lg:block object-cover w-full h-[35rem] hover:scale-105 duration-700 relative" src="./assets/images/banner.jpg" width="1402" height="560" alt="" />
+                            </picture>
+                            <picture>
+                                <source srcset="./assets/images/banner-mobile.webp" type="image/webp" />
+                                <source srcset="./assets/images/banner-mobile.jpg" type="image/jpeg" />
+                                <img class="lg:hidden object-cover w-full h-80 md:h-[35rem] hover:scale-105 duration-700 relative" src="./assets/images/banner-mobile.jpg" width="646" height="560" alt="" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="max-w-4xl mx-auto space-y-20 px-6 py-20 md:py-24">
+                        <div class="space-y-4">
+                            <h2 class="font-medium text-2xl">We make investing a community lifestyle by connecting people with global first-class real estate.</h2>
+                            <p class="md:leading-7 wow animate__animated animate__fadeInUp">
+                                The opportunity to invest in luxury real estate has never been more significant. With a portfolio that deals exclusively in projects involving hotels, resorts, and other first-class travel destinations. Now you can make money where others spend their holidays.
+                            </p>
+                        </div>
+                        <div class="flex items-center flex-col md:flex-row space-y-16 md:space-y-0 md:space-x-24">
+                            <div class="space-y-4 wow animate__animated animate__fadeInUp">
+                                <h2 class="font-bold text-4xl">The easiest way to invest in luxus real estate</h2>
+                                <p class="md:leading-7">A fractional investment makes real estate accessible for everyone. By splitting an investment into smaller pieces, you can acquire a fraction of the project based on your budget.</p>
+                            </div>
+                            <img class="wow animate__animated animate__fadeInUp" src="../assets/images/shares-calc.svg" width="308" height="376" alt="" />
+                        </div>
                     </div>
                 </div>
-                <div class="max-w-4xl mx-auto space-y-20 px-6 py-20 md:py-24">
-                    <div class="space-y-4">
-                        <h2 class="font-medium text-2xl">We make investing a community lifestyle by connecting people with global first-class real estate.</h2>
-                        <p class="md:leading-7 wow animate__animated animate__fadeInUp">
-                            The opportunity to invest in luxury real estate has never been more significant. With a portfolio that deals exclusively in projects involving hotels, resorts, and other first-class travel destinations. Now you can make money where others spend their holidays.
+            </section>
+
+            <section class="bg-pampas">
+                <div class="max-w-sm md:max-w-4xl mx-auto py-20 md:py-32 flex flex-col md:flex-row items-center md:space-x-8 lg:space-x-24 px-6">
+                    <img class="md:w-1/2 order-2 md:order-1 mt-32 sm:mt-16 md:mt-0 wow animate__animated animate__fadeInLeft" width="361" height="205" src="./assets/images/credit-card.svg" alt="" />
+                    <div class="space-y-4 md:w-1/2 md:order-2 wow animate__animated animate__fadeInUp">
+                        <h2 class="font-bold text-4xl">What is fractional investig?</h2>
+                        <p class="text-sm md:leading-6">Fractional investing also allows our partners to access funding for expansion and other projects. By doing so, we increase the value & your investments.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 md:pt-32 px-6">
+                <div class="max-w-6xl mx-auto bg-cold-gray text-white text-center rounded-[2rem] py-16 px-6">
+                    <div class="space-y-16 max-w-3xl mx-auto">
+                        <h2 class="font-bold text-4xl wow animate__animated animate__fadeInUp">Our business model briefly explained</h2>
+                        <div class="flex items-center flex-col md:flex-row space-y-8 md:space-y-0 justify-around wow animate__animated animate__fadeInUp">
+                            <div class="flex flex-col items-center">
+                                <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
+                                    <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 md:w-auto h-auto" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.4192 6.16142L15.8837 2.62588C15.3955 2.13773 14.604 2.13773 14.1159 2.62588L10.5803 6.16142C10.0922 6.64957 10.0922 7.44103 10.5803 7.92918L14.1159 11.4647C14.604 11.9529 15.3955 11.9529 15.8837 11.4647L19.4192 7.92918C19.9073 7.44103 19.9073 6.64957 19.4192 6.16142Z"
+                                            stroke="#27D17E"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M11.4645 14.1165L7.92894 10.581C7.44078 10.0928 6.64933 10.0928 6.16117 10.581L2.62564 14.1165C2.13748 14.6046 2.13748 15.3961 2.62564 15.8843L6.16117 19.4198C6.64933 19.908 7.44078 19.908 7.92894 19.4198L11.4645 15.8843C11.9526 15.3961 11.9526 14.6046 11.4645 14.1165Z"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M27.3739 14.1165L23.8384 10.581C23.3502 10.0928 22.5588 10.0928 22.0706 10.581L18.5351 14.1165C18.0469 14.6046 18.0469 15.3961 18.5351 15.8843L22.0706 19.4198C22.5588 19.908 23.3502 19.908 23.8384 19.4198L27.3739 15.8843C27.8621 15.3961 27.8621 14.6046 27.3739 14.1165Z"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M19.4192 22.0716L15.8837 18.536C15.3955 18.0479 14.604 18.0479 14.1159 18.536L10.5803 22.0716C10.0922 22.5597 10.0922 23.3512 10.5803 23.8393L14.1159 27.3749C14.604 27.863 15.3955 27.863 15.8837 27.3749L19.4192 23.8393C19.9073 23.3512 19.9073 22.5597 19.4192 22.0716Z"
+                                            stroke="#27D17E"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
+                                <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
+                                </ul>
+                            </div>
+
+                            <svg class="rotate-90 md:rotate-0" width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 13a1 1 0 1 0 0-2v2ZM3 11a1 1 0 1 0 0 2v-2Zm18 0H3v2h18v-2Z" fill="#fff" />
+                                <path
+                                    d="M7.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM3 12l-.707-.707a1 1 0 0 0 0 1.414L3 12Zm5.707-4.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm0 8.586-5-5-1.414 1.414 5 5 1.414-1.414Zm-5-3.586 5-5-1.414-1.414-5 5 1.414 1.414ZM3 26a1 1 0 1 0 0 2v-2Zm18 2a1 1 0 1 0 0-2v2ZM3 28h18v-2H3v2Z"
+                                    fill="#fff"
+                                />
+                                <path d="M16.707 21.293a1 1 0 0 0-1.414 1.414l1.414-1.414ZM21 27l.707.707a1 1 0 0 0 0-1.414L21 27Zm-5.707 4.293a1 1 0 0 0 1.414 1.414l-1.414-1.414Zm0-8.586 5 5 1.414-1.414-5-5-1.414 1.414Zm5 3.586-5 5 1.414 1.414 5-5-1.414-1.414Z" fill="#fff" />
+                            </svg>
+
+                            <div class="flex flex-col items-center">
+                                <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
+                                    <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 md:w-auto h-auto" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.179 10.977a5.204 5.204 0 0 0-.214-.219 62.212 62.212 0 0 1-3.234-3.215 62.884 62.884 0 0 1-3.173-3.676 4.885 4.885 0 0 0-1.873-1.468A4.616 4.616 0 0 0 13.812 2c-.642 0-1.278.135-1.872.399a4.885 4.885 0 0 0-1.873 1.468 61.539 61.539 0 0 1-6.407 6.892 5.458 5.458 0 0 0-1.65 3.609 5.546 5.546 0 0 0 1.009 3.561c.728 1.017 1.777 1.717 2.952 1.968a4.663 4.663 0 0 0 3.433-.601 8.372 8.372 0 0 1 4.409-1.261 8.372 8.372 0 0 1 4.409 1.26 4.664 4.664 0 0 0 3.432.602c1.175-.251 2.224-.95 2.952-1.968a5.546 5.546 0 0 0 1.008-3.562 5.458 5.458 0 0 0-1.435-3.39Z"
+                                            stroke="#27D17E"
+                                            stroke-width="3"
+                                        />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
+                                <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
+                                </ul>
+                            </div>
+
+                            <svg class="rotate-90 md:rotate-0" width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 13a1 1 0 1 0 0-2v2ZM3 11a1 1 0 1 0 0 2v-2Zm18 0H3v2h18v-2Z" fill="#fff" />
+                                <path
+                                    d="M7.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM3 12l-.707-.707a1 1 0 0 0 0 1.414L3 12Zm5.707-4.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm0 8.586-5-5-1.414 1.414 5 5 1.414-1.414Zm-5-3.586 5-5-1.414-1.414-5 5 1.414 1.414ZM3 26a1 1 0 1 0 0 2v-2Zm18 2a1 1 0 1 0 0-2v2ZM3 28h18v-2H3v2Z"
+                                    fill="#fff"
+                                />
+                                <path d="M16.707 21.293a1 1 0 0 0-1.414 1.414l1.414-1.414ZM21 27l.707.707a1 1 0 0 0 0-1.414L21 27Zm-5.707 4.293a1 1 0 0 0 1.414 1.414l-1.414-1.414Zm0-8.586 5 5 1.414-1.414-5-5-1.414 1.414Zm5 3.586-5 5 1.414 1.414 5-5-1.414-1.414Z" fill="#fff" />
+                            </svg>
+
+                            <div class="flex flex-col items-center">
+                                <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
+                                    <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 md:w-auto h-auto" width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.25 15.284c2.913.687 5 2.539 5 4.716" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.75 20c0-2.761 3.358-5 7.5-5 4.142 0 7.5 2.239 7.5 5" stroke="#27D17E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.75 11.25a5 5 0 0 0 0-10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.25 11.25a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="#27D17E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
+                                <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
+                                    <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative hidden md:block mx-auto max-w-7xl">
+                <picture>
+                    <source srcset="./assets/images/tablet.webp" type="image/webp" />
+                    <source srcset="./assets/images/tablet.png" type="image/jpeg" />
+                    <img style="max-width: 1245px" class="w-[100%] mx-auto -mr-[5%]" src="./assets/images/tablet.png" alt="" />
+                </picture>
+                <picture>
+                    <source srcset="./assets/images/phone-1.webp" type="image/webp" />
+                    <source srcset="./assets/images/phone-1.png" type="image/jpeg" />
+                    <img style="max-width: 599px" class="absolute top-[40%] left-[-4%] z-10 w-[50%] lax lax_preset_fadeIn:50:100 lax_preset_spin" src="./assets/images/phone-1.png" alt="" />
+                </picture>
+                <picture>
+                    <source srcset="./assets/images/phone-2.webp" type="image/webp" />
+                    <source srcset="./assets/images/phone-2.png" type="image/jpeg" />
+                    <img style="max-width: 789px" class="absolute top-[10%] left-[-4%] w-[60%]" src="./assets/images/phone-2.png" alt="" />
+                </picture>
+            </section>
+
+            <section class="relative w-full flex flex-col">
+                <div class="max-w-7xl mx-auto py-8 lg:py-16 px-6">
+                    <div class="w-full lg:w-1/2 my-auto space-y-8 lg:space-y-4 wow animate__animated animate__fadeInUp">
+                        <h2 class="font-medium text-4xl">Access a new asset class otherwise only available to large investors</h2>
+                        <p class="lg:leading-8 text-mine-shaft">
+                            A fractional investment makes real estate accessible for everyone. By splitting an investment into smaller pieces, you can acquire a fraction of the project based on your budget. <br />Fractional investing also allows our partners to access funding for expansion and other
+                            projects. By doing so, we increase the value & your investments.
                         </p>
                     </div>
-                    <div class="flex items-center flex-col md:flex-row space-y-16 md:space-y-0 md:space-x-24">
-                        <div class="space-y-4 wow animate__animated animate__fadeInUp">
-                            <h2 class="font-bold text-4xl">The easiest way to invest in luxus real estate</h2>
-                            <p class="md:leading-7">A fractional investment makes real estate accessible for everyone. By splitting an investment into smaller pieces, you can acquire a fraction of the project based on your budget.</p>
-                        </div>
-                        <img class="wow animate__animated animate__fadeInUp" src="../assets/images/shares-calc.svg" width="308" height="376" alt="" />
-                    </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="bg-pampas">
-            <div class="max-w-sm md:max-w-4xl mx-auto py-20 md:py-32 flex flex-col md:flex-row items-center md:space-x-8 lg:space-x-24 px-6">
-                <img class="md:w-1/2 order-2 md:order-1 mt-32 sm:mt-16 md:mt-0 wow animate__animated animate__fadeInLeft" width="361" height="205" src="./assets/images/credit-card.svg" alt="" />
-                <div class="space-y-4 md:w-1/2 md:order-2 wow animate__animated animate__fadeInUp">
-                    <h2 class="font-bold text-4xl">What is fractional investig?</h2>
-                    <p class="text-sm md:leading-6">Fractional investing also allows our partners to access funding for expansion and other projects. By doing so, we increase the value & your investments.</p>
+                <picture>
+                    <source srcset="./assets/images/so.webp" type="image/webp" />
+                    <source srcset="./assets/images/so.jpg" type="image/jpeg" />
+                    <img class="lg:absolute right-0 top-0 lg:w-2/5 rounded-l-3xl lg:h-full object-cover ml-8 lg:ml-0 h-72 md:h-96 wow animate__animated animate__fadeInRight" alt="" width="642" height="378" src="./assets/images/so.jpg" />
+                </picture>
+            </section>
+
+            <section>
+                <div class="space-y-4 py-20 text-center wow animate__animated animate__fadeInUp">
+                    <h2 class="font-medium text-4xl">The future of real estate</h2>
+                    <p class="lg:leading-8 text-mine-shaft max-w-sm mx-auto">liquid, fast and secure transactions through blockchain technology</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="py-20 md:pt-32 px-6">
-            <div class="max-w-6xl mx-auto bg-cold-gray text-white text-center rounded-[2rem] py-16 px-6">
-                <div class="space-y-16 max-w-3xl mx-auto">
-                    <h2 class="font-bold text-4xl wow animate__animated animate__fadeInUp">Our business model briefly explained</h2>
-                    <div class="flex items-center flex-col md:flex-row space-y-8 md:space-y-0 justify-around wow animate__animated animate__fadeInUp">
-                        <div class="flex flex-col items-center">
-                            <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
-                                <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 md:w-auto h-auto" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.4192 6.16142L15.8837 2.62588C15.3955 2.13773 14.604 2.13773 14.1159 2.62588L10.5803 6.16142C10.0922 6.64957 10.0922 7.44103 10.5803 7.92918L14.1159 11.4647C14.604 11.9529 15.3955 11.9529 15.8837 11.4647L19.4192 7.92918C19.9073 7.44103 19.9073 6.64957 19.4192 6.16142Z"
-                                        stroke="#27D17E"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M11.4645 14.1165L7.92894 10.581C7.44078 10.0928 6.64933 10.0928 6.16117 10.581L2.62564 14.1165C2.13748 14.6046 2.13748 15.3961 2.62564 15.8843L6.16117 19.4198C6.64933 19.908 7.44078 19.908 7.92894 19.4198L11.4645 15.8843C11.9526 15.3961 11.9526 14.6046 11.4645 14.1165Z"
-                                        stroke="white"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M27.3739 14.1165L23.8384 10.581C23.3502 10.0928 22.5588 10.0928 22.0706 10.581L18.5351 14.1165C18.0469 14.6046 18.0469 15.3961 18.5351 15.8843L22.0706 19.4198C22.5588 19.908 23.3502 19.908 23.8384 19.4198L27.3739 15.8843C27.8621 15.3961 27.8621 14.6046 27.3739 14.1165Z"
-                                        stroke="white"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M19.4192 22.0716L15.8837 18.536C15.3955 18.0479 14.604 18.0479 14.1159 18.536L10.5803 22.0716C10.0922 22.5597 10.0922 23.3512 10.5803 23.8393L14.1159 27.3749C14.604 27.863 15.3955 27.863 15.8837 27.3749L19.4192 23.8393C19.9073 23.3512 19.9073 22.5597 19.4192 22.0716Z"
-                                        stroke="#27D17E"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
-                            <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
-                            </ul>
-                        </div>
-
-                        <svg class="rotate-90 md:rotate-0" width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 13a1 1 0 1 0 0-2v2ZM3 11a1 1 0 1 0 0 2v-2Zm18 0H3v2h18v-2Z" fill="#fff" />
-                            <path
-                                d="M7.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM3 12l-.707-.707a1 1 0 0 0 0 1.414L3 12Zm5.707-4.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm0 8.586-5-5-1.414 1.414 5 5 1.414-1.414Zm-5-3.586 5-5-1.414-1.414-5 5 1.414 1.414ZM3 26a1 1 0 1 0 0 2v-2Zm18 2a1 1 0 1 0 0-2v2ZM3 28h18v-2H3v2Z"
-                                fill="#fff"
-                            />
-                            <path d="M16.707 21.293a1 1 0 0 0-1.414 1.414l1.414-1.414ZM21 27l.707.707a1 1 0 0 0 0-1.414L21 27Zm-5.707 4.293a1 1 0 0 0 1.414 1.414l-1.414-1.414Zm0-8.586 5 5 1.414-1.414-5-5-1.414 1.414Zm5 3.586-5 5 1.414 1.414 5-5-1.414-1.414Z" fill="#fff" />
-                        </svg>
-
-                        <div class="flex flex-col items-center">
-                            <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
-                                <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 md:w-auto h-auto" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M24.179 10.977a5.204 5.204 0 0 0-.214-.219 62.212 62.212 0 0 1-3.234-3.215 62.884 62.884 0 0 1-3.173-3.676 4.885 4.885 0 0 0-1.873-1.468A4.616 4.616 0 0 0 13.812 2c-.642 0-1.278.135-1.872.399a4.885 4.885 0 0 0-1.873 1.468 61.539 61.539 0 0 1-6.407 6.892 5.458 5.458 0 0 0-1.65 3.609 5.546 5.546 0 0 0 1.009 3.561c.728 1.017 1.777 1.717 2.952 1.968a4.663 4.663 0 0 0 3.433-.601 8.372 8.372 0 0 1 4.409-1.261 8.372 8.372 0 0 1 4.409 1.26 4.664 4.664 0 0 0 3.432.602c1.175-.251 2.224-.95 2.952-1.968a5.546 5.546 0 0 0 1.008-3.562 5.458 5.458 0 0 0-1.435-3.39Z"
-                                        stroke="#27D17E"
-                                        stroke-width="3"
-                                    />
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
-                            <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
-                            </ul>
-                        </div>
-
-                        <svg class="rotate-90 md:rotate-0" width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 13a1 1 0 1 0 0-2v2ZM3 11a1 1 0 1 0 0 2v-2Zm18 0H3v2h18v-2Z" fill="#fff" />
-                            <path
-                                d="M7.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM3 12l-.707-.707a1 1 0 0 0 0 1.414L3 12Zm5.707-4.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm0 8.586-5-5-1.414 1.414 5 5 1.414-1.414Zm-5-3.586 5-5-1.414-1.414-5 5 1.414 1.414ZM3 26a1 1 0 1 0 0 2v-2Zm18 2a1 1 0 1 0 0-2v2ZM3 28h18v-2H3v2Z"
-                                fill="#fff"
-                            />
-                            <path d="M16.707 21.293a1 1 0 0 0-1.414 1.414l1.414-1.414ZM21 27l.707.707a1 1 0 0 0 0-1.414L21 27Zm-5.707 4.293a1 1 0 0 0 1.414 1.414l-1.414-1.414Zm0-8.586 5 5 1.414-1.414-5-5-1.414 1.414Zm5 3.586-5 5 1.414 1.414 5-5-1.414-1.414Z" fill="#fff" />
-                        </svg>
-
-                        <div class="flex flex-col items-center">
-                            <div class="bg-shark w-20 h-20 md:w-14 md:h-14 relative rounded-full">
-                                <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 md:w-auto h-auto" width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.25 15.284c2.913.687 5 2.539 5 4.716" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M1.75 20c0-2.761 3.358-5 7.5-5 4.142 0 7.5 2.239 7.5 5" stroke="#27D17E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M16.75 11.25a5 5 0 0 0 0-10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M9.25 11.25a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="#27D17E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-shamrock text-2xl md:text-xl mt-3">Partners</h3>
-                            <ul class="md:list-disc flex md:flex-col items-center space-y-1 mt-2 text-silver">
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Divident payout</li>
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Profit sharing</li>
-                                <li class="md:text-xs w-fit"><span class="md:hidden">&#160;/</span> Equity</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="relative hidden md:block mx-auto max-w-7xl">
-            <picture>
-                <source srcset="./assets/images/tablet.webp" type="image/webp" />
-                <source srcset="./assets/images/tablet.png" type="image/jpeg" />
-                <img style="max-width: 1245px" class="w-[100%] mx-auto -mr-[5%]" src="./assets/images/tablet.png" alt="" />
-            </picture>
-            <picture>
-                <source srcset="./assets/images/phone-1.webp" type="image/webp" />
-                <source srcset="./assets/images/phone-1.png" type="image/jpeg" />
-                <img style="max-width: 599px" class="absolute top-[40%] left-[-4%] z-10 w-[50%] lax lax_preset_fadeIn:50:100 lax_preset_spin" src="./assets/images/phone-1.png" alt="" />
-            </picture>
-            <picture>
-                <source srcset="./assets/images/phone-2.webp" type="image/webp" />
-                <source srcset="./assets/images/phone-2.png" type="image/jpeg" />
-                <img style="max-width: 789px" class="absolute top-[10%] left-[-4%] w-[60%]" src="./assets/images/phone-2.png" alt="" />
-            </picture>
-        </section>
-
-        <section class="relative w-full flex flex-col">
-            <div class="max-w-7xl mx-auto py-8 lg:py-16 px-6">
-                <div class="w-full lg:w-1/2 my-auto space-y-8 lg:space-y-4 wow animate__animated animate__fadeInUp">
-                    <h2 class="font-medium text-4xl">Access a new asset class otherwise only available to large investors</h2>
-                    <p class="lg:leading-8 text-mine-shaft">
-                        A fractional investment makes real estate accessible for everyone. By splitting an investment into smaller pieces, you can acquire a fraction of the project based on your budget. <br />Fractional investing also allows our partners to access funding for expansion and other
-                        projects. By doing so, we increase the value & your investments.
-                    </p>
-                </div>
-            </div>
-
-            <picture>
-                <source srcset="./assets/images/so.webp" type="image/webp" />
-                <source srcset="./assets/images/so.jpg" type="image/jpeg" />
-                <img class="lg:absolute right-0 top-0 lg:w-2/5 rounded-l-3xl lg:h-full object-cover ml-8 lg:ml-0 h-72 md:h-96 wow animate__animated animate__fadeInRight" alt="" width="642" height="378" src="./assets/images/so.jpg" />
-            </picture>
-        </section>
-
-        <section class="">
-            <div class="space-y-4 py-20 text-center wow animate__animated animate__fadeInUp">
-                <h2 class="font-medium text-4xl">The future of real estate</h2>
-                <p class="lg:leading-8 text-mine-shaft">
-                    liquid, fast and secure transactions through <br />
-                    blockchain technology
-                </p>
-            </div>
-            <div class="flex flex-col lg:flex-row max-w-7xl justify-between px-8 md:px-16 lg:px-6 mx-auto text-mine-shaft text-sm sm:text-base lg:text-sm">
-                <div class="order-2 lg:w-1/3">
-                    <div class="space-y-4 sm:max-w-xs lg:max-w-[17rem] my-16 lg:my-0">
-                        <ul class="text-boulder space-y-4 lg:space-y-2">
-                            <li class="bg-pampas flex px-4 space-x-3 py-5 lg:py-3 rounded-xl">
-                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#a)" fill="#747474">
-                                        <path d="M18.743 5.206a.5.5 0 0 0-.707-.708l.707.708Zm-6.01 4.596a.5.5 0 1 0 .707.707l-.708-.707Zm5.303-5.304-5.304 5.304.708.707 5.303-5.303-.707-.708Z" />
-                                        <path d="M16.032 10.656a.5.5 0 0 0 0-1v1Zm-2.946-.5h-.5a.5.5 0 0 0 .5.5v-.5Zm.5-2.947a.5.5 0 1 0-1 0h1Zm2.446 2.447h-2.946v1h2.946v-1Zm-2.446.5V7.209h-1v2.947h1Z" />
-                                    </g>
-                                    <path d="M4.732 17.802a.5.5 0 1 0 .707.707l-.707-.707Zm6.01-4.596a.5.5 0 1 0-.706-.707l.707.707ZM5.44 18.51l5.304-5.303-.707-.707-5.304 5.303.707.707Z" fill="#747474" />
-                                    <path d="M7.443 12.352a.5.5 0 1 0 0 1v-1Zm2.946.5h.5a.5.5 0 0 0-.5-.5v.5Zm-.5 2.946a.5.5 0 1 0 1 0h-1Zm-2.446-2.446h2.946v-1H7.443v1Zm2.446-.5v2.946h1v-2.946h-1Z" fill="#747474" />
-                                    <defs>
-                                        <clipPath id="a"><path fill="#fff" transform="rotate(-45 13.391 -6.71)" d="M0 0h10v10H0z" /></clipPath>
-                                    </defs></svg
-                                ><span>Lorem ipsum dolor.</span>
-                            </li>
-                            <li class="bg-karaka text-white flex justify-between px-4 py-5 lg:py-3 rounded-xl">
-                                <div class="flex space-x-3">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M13.946 2.54H7.28a.833.833 0 0 0-.833.833v13.334c0 .46.373.833.833.833h6.667c.46 0 .834-.373.834-.833V3.373a.833.833 0 0 0-.834-.833Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.613 15.04h.002v.002h-.002v-.002Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                <div class="flex flex-col lg:flex-row max-w-7xl justify-between px-8 md:px-16 lg:px-6 mx-auto text-mine-shaft text-sm sm:text-base lg:text-sm">
+                    <div class="order-2 lg:w-1/3">
+                        <div class="space-y-4 sm:max-w-xs lg:max-w-[17rem] my-16 lg:my-0">
+                            <ul class="text-boulder space-y-4 lg:space-y-2">
+                                <li class="bg-pampas flex px-4 space-x-3 py-5 lg:py-3 rounded-xl">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#a)" fill="#747474">
+                                            <path d="M18.743 5.206a.5.5 0 0 0-.707-.708l.707.708Zm-6.01 4.596a.5.5 0 1 0 .707.707l-.708-.707Zm5.303-5.304-5.304 5.304.708.707 5.303-5.303-.707-.708Z" />
+                                            <path d="M16.032 10.656a.5.5 0 0 0 0-1v1Zm-2.946-.5h-.5a.5.5 0 0 0 .5.5v-.5Zm.5-2.947a.5.5 0 1 0-1 0h1Zm2.446 2.447h-2.946v1h2.946v-1Zm-2.446.5V7.209h-1v2.947h1Z" />
+                                        </g>
+                                        <path d="M4.732 17.802a.5.5 0 1 0 .707.707l-.707-.707Zm6.01-4.596a.5.5 0 1 0-.706-.707l.707.707ZM5.44 18.51l5.304-5.303-.707-.707-5.304 5.303.707.707Z" fill="#747474" />
+                                        <path d="M7.443 12.352a.5.5 0 1 0 0 1v-1Zm2.946.5h.5a.5.5 0 0 0-.5-.5v.5Zm-.5 2.946a.5.5 0 1 0 1 0h-1Zm-2.446-2.446h2.946v-1H7.443v1Zm2.446-.5v2.946h1v-2.946h-1Z" fill="#747474" />
+                                        <defs>
+                                            <clipPath id="a"><path fill="#fff" transform="rotate(-45 13.391 -6.71)" d="M0 0h10v10H0z" /></clipPath>
+                                        </defs></svg
                                     ><span>Lorem ipsum dolor.</span>
+                                </li>
+                                <li class="bg-karaka text-white flex justify-between px-4 py-5 lg:py-3 rounded-xl">
+                                    <div class="flex space-x-3">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.946 2.54H7.28a.833.833 0 0 0-.833.833v13.334c0 .46.373.833.833.833h6.667c.46 0 .834-.373.834-.833V3.373a.833.833 0 0 0-.834-.833Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10.613 15.04h.002v.002h-.002v-.002Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                                        ><span>Lorem ipsum dolor.</span>
+                                    </div>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m8.666 12.526 4.243 4.242 8.485-8.485M3.667 12.526l4.242 4.242m5.257-5.227 3.228-3.258" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </li>
+                                <li class="bg-pampas flex px-4 space-x-3 py-5 lg:py-3 rounded-xl">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#a)" fill="#747474">
+                                            <path d="M18.743 5.206a.5.5 0 0 0-.707-.708l.707.708Zm-6.01 4.596a.5.5 0 1 0 .707.707l-.708-.707Zm5.303-5.304-5.304 5.304.708.707 5.303-5.303-.707-.708Z" />
+                                            <path d="M16.032 10.656a.5.5 0 0 0 0-1v1Zm-2.946-.5h-.5a.5.5 0 0 0 .5.5v-.5Zm.5-2.947a.5.5 0 1 0-1 0h1Zm2.446 2.447h-2.946v1h2.946v-1Zm-2.446.5V7.209h-1v2.947h1Z" />
+                                        </g>
+                                        <path d="M4.732 17.802a.5.5 0 1 0 .707.707l-.707-.707Zm6.01-4.596a.5.5 0 1 0-.706-.707l.707.707ZM5.44 18.51l5.304-5.303-.707-.707-5.304 5.303.707.707Z" fill="#747474" />
+                                        <path d="M7.443 12.352a.5.5 0 1 0 0 1v-1Zm2.946.5h.5a.5.5 0 0 0-.5-.5v.5Zm-.5 2.946a.5.5 0 1 0 1 0h-1Zm-2.446-2.446h2.946v-1H7.443v1Zm2.446-.5v2.946h1v-2.946h-1Z" fill="#747474" />
+                                        <defs>
+                                            <clipPath id="a"><path fill="#fff" transform="rotate(-45 13.391 -6.71)" d="M0 0h10v10H0z" /></clipPath>
+                                        </defs></svg
+                                    ><span>Lorem ipsum dolor.</span>
+                                </li>
+                                <li class="bg-pampas flex px-4 space-x-3 py-5 lg:py-3 rounded-xl">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.167 15.087h15M15.41 7.362 10.16 2.77a.75.75 0 0 0-.987 0l-5.25 4.593a.75.75 0 0 0-.256.565v6.41c0 .414.335.75.75.75h3a.75.75 0 0 0 .75-.75v-3a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v3c0 .414.335.75.75.75h3a.75.75 0 0 0 .75-.75v-6.41a.75.75 0 0 0-.257-.565Z"
+                                            stroke="#747474"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        /></svg
+                                    ><span>Lorem ipsum dolor.</span>
+                                </li>
+                            </ul>
+                            <p class="lg:leading-6">Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
+                            <div class="h-[2px] w-12 bg-karaka"></div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 lg:w-1/3 relative">
+                        <picture>
+                            <source srcset="./assets/images/phone-3.webp" type="image/webp" />
+                            <source srcset="./assets/images/phone-3.png" type="image/jpeg" />
+                            <img class="mx-auto wow animate__animated animate__pulse" src="./assets/images/phone-3.png" width="273" height="511" alt="" />
+                        </picture>
+                        <ul class="hidden absolute z-[-1] -bottom-[7%] -left-[34%] lg:flex space-x-4 bg-pampas py-4 px-4 rounded-xl">
+                            <li class="space-y-2">
+                                <svg class="ml-2" width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.451" cy="19.012" r="18.361" fill="#24160B" />
+                                    <path d="M14.086 21.472a1 1 0 1 0 1.415 1.415l-1.415-1.415Zm6.976-4.147a1 1 0 0 0-1.414-1.414l1.414 1.414Zm-5.561 5.562 5.561-5.562-1.414-1.414-5.562 5.561 1.415 1.415Z" fill="#fff" />
+                                    <path
+                                        d="m18.721 30.299-.894.447.894-.447Zm2.123-.176-.955-.294.955.294Zm-6.48-8.027-.448.895.447-.895Zm.513.514.894-.447-.894.447ZM6.85 16.129l.294.955-.294-.955Zm-.176 2.123-.447.894.447-.894Zm18.318-7.705.294.955-.294-.956Zm1.435 1.434.955.294-.955-.294Zm-1.729-2.39L6.556 15.173l.588 1.911 18.142-5.582-.588-1.911Zm-18.47 9.555 7.688 3.845.895-1.789-7.69-3.845-.894 1.79Zm7.754 3.91 3.845 7.69 1.789-.894-3.845-7.69-1.789.895Zm7.818 7.361 5.582-18.142-1.911-.588-5.582 18.142 1.911.588Zm-3.973.329c.866 1.733 3.403 1.523 3.973-.329l-1.911-.588c-.014.046-.033.064-.046.074a.158.158 0 0 1-.083.03.159.159 0 0 1-.087-.016c-.014-.008-.036-.023-.057-.066l-1.79.895Zm-3.91-7.755a.148.148 0 0 1 .065.066l1.79-.894a2.147 2.147 0 0 0-.961-.961l-.895 1.789Zm-7.36-7.818c-1.853.57-2.063 3.107-.33 3.973l.895-1.788c-.043-.022-.058-.043-.066-.058a.16.16 0 0 1-.015-.087.16.16 0 0 1 .029-.082c.01-.014.028-.032.074-.047l-.588-1.911Zm18.73-3.67a.137.137 0 0 1 .08-.005.155.155 0 0 1 .067.041.155.155 0 0 1 .04.068.136.136 0 0 1-.003.08l1.911.588c.507-1.648-1.036-3.191-2.684-2.684l.588 1.911Z"
+                                        fill="#fff"
+                                    />
+                                </svg>
+                                <span class="text-black inline-block text-xs">1st Session</span>
+                            </li>
+                            <li class="space-y-2">
+                                <svg class="ml-2" width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="18.487" cy="19.012" r="18.361" fill="#24160B" />
+                                    <path
+                                        d="M14.815 16.796h1a1 1 0 0 0-1-1v1Zm0 11.017v1a1 1 0 0 0 1-1h-1Zm-7.345 0h-1a1 1 0 0 0 1 1v-1Zm1.224-10.017h6.12v-2h-6.12v2Zm5.12-1v11.017h2V16.796h-2Zm1 10.017H7.47v2h7.345v-2Zm-6.344 1V18.02h-2v9.793h2Zm.224-12.017A2.224 2.224 0 0 0 6.47 18.02h2c0-.124.1-.224.224-.224v-2ZM22.159 13.124v-1a1 1 0 0 0-1 1h1Zm7.345 14.689v1a1 1 0 0 0 1-1h-1Zm-7.345 0h-1a1 1 0 0 0 1 1v-1Zm0-13.689h6.12v-2h-6.12v2Zm6.345.224v13.465h2V14.348h-2Zm1 12.465h-7.345v2h7.345v-2Zm-6.345 1V13.124h-2v14.689h2Zm5.12-13.689c.124 0 .224.1.224.224h2a2.224 2.224 0 0 0-2.224-2.224v2Z"
+                                        fill="#fff"
+                                    />
+                                    <path
+                                        d="M22.159 27.813v1a1 1 0 0 0 1-1h-1Zm-7.344 0h-1a1 1 0 0 0 1 1v-1Zm1.224-18.585h4.896v-2h-4.896v2Zm5.12.224v18.36h2V9.453h-2Zm1 17.36h-7.344v2h7.344v-2Zm-6.344 1V9.453h-2v18.36h2Zm5.12-18.584c.124 0 .224.1.224.224h2a2.224 2.224 0 0 0-2.224-2.224v2Zm-4.896-2a2.224 2.224 0 0 0-2.225 2.224h2c0-.124.1-.224.225-.224v-2Z"
+                                        fill="#fff"
+                                    />
+                                </svg>
+                                <span class="text-black inline-block text-xs">3-Day Streak</span>
+                            </li>
+                            <li class="space-y-2">
+                                <svg class="ml-2" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="19.176" cy="19.012" r="18.361" fill="#24160B" />
+                                    <path d="M19.175 24.75a5.738 5.738 0 1 0 0-11.476 5.738 5.738 0 0 0 0 11.476Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M18.175 9.831a1 1 0 0 0 2 0h-2Zm2-2.295a1 1 0 1 0-2 0h2Zm0 20.656a1 1 0 1 0-2 0h2Zm-2 2.296a1 1 0 0 0 2 0h-2Zm2-20.657V7.536h-2v2.295h2Zm-2 18.361v2.296h2v-2.296h-2ZM12.058 13.31a1 1 0 0 0 1.414-1.415l-1.414 1.415Zm-.209-3.038a1 1 0 0 0-1.414 1.415l1.414-1.415ZM26.456 24.88a1 1 0 0 0-1.415 1.414l1.415-1.414Zm.208 3.037a1 1 0 0 0 1.414-1.415l-1.414 1.415Zm-13.192-16.02-1.623-1.624-1.414 1.415 1.623 1.623 1.414-1.415Zm11.57 14.397 1.622 1.623 1.414-1.415-1.622-1.622-1.415 1.414ZM9.995 20.012a1 1 0 1 0 0-2v2Zm-2.296-2a1 1 0 1 0 0 2v-2Zm20.657 0a1 1 0 1 0 0 2v-2Zm2.295 2a1 1 0 0 0 0-2v2Zm-20.656-2H7.699v2h2.296v-2Zm18.36 2h2.296v-2h-2.295v2ZM25.041 11.895a1 1 0 0 0 1.414 1.415l-1.414-1.415Zm3.037-.208a1 1 0 0 0-1.414-1.415l1.414 1.415ZM13.472 26.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm-3.037.209a1 1 0 0 0 1.414 1.414L10.435 26.5Zm16.02-13.192 1.623-1.623-1.414-1.415-1.623 1.623 1.414 1.415ZM12.058 24.879 10.435 26.5l1.414 1.415 1.623-1.623-1.414-1.414Z"
+                                        fill="#fff"
+                                    />
+                                </svg>
+                                <span class="text-black inline-block text-xs">7-Day Streak</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-3 lg:w-1/3 flex flex-col justify-between space-y-16 lg:space-y-0">
+                        <div class="relative mr-0 ml-auto space-y-4 max-w-[17rem] sm:max-w-sm lg:max-w-[17rem]">
+                            <div class="flex items-center space-x-3 bg-pampas text-boulder px-4 py-3 rounded-xl">
+                                <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.174 11.742h-.018v.042L.008 19.289l13.852-5.81-8.043-8.041-2.643 6.304Zm4.782 3.346-1.6.671V7.107l1.6 1.6v6.381Zm.8-5.58 1.6 1.6v2.974l-1.6.67V9.508Zm-3.2 6.587-1.6.67v-4.82l1.6-3.816v7.966Zm-2.4-2.242V17.1l-1.653.693 1.653-3.941Zm8-.107v-1.839l1.296 1.296-1.296.543ZM10.356 3.342c-.883 0-1.6.717-1.6 1.6 0 .882.717 1.6 1.6 1.6.882 0 1.6-.718 1.6-1.6 0-.883-.718-1.6-1.6-1.6Zm0 2.4a.8.8 0 1 1 .001-1.602.8.8 0 0 1-.001 1.602ZM17.556.142c-.883 0-1.6.717-1.6 1.6 0 .882.717 1.6 1.6 1.6.882 0 1.6-.718 1.6-1.6 0-.883-.718-1.6-1.6-1.6Zm0 2.4A.8.8 0 1 1 17.557.94a.8.8 0 0 1-.001 1.602ZM15.556 6.542c-.883 0-1.6.718-1.6 1.6 0 .882.717 1.6 1.6 1.6.882 0 1.6-.718 1.6-1.6 0-.882-.718-1.6-1.6-1.6Zm0 2.4a.8.8 0 1 1 .001-1.602.8.8 0 0 1-.001 1.602ZM13.879 12.011l.566.566a2.852 2.852 0 0 1 4.028 0l.566-.566a3.652 3.652 0 0 0-5.16 0ZM7.038 5.625a2.803 2.803 0 0 0 0-3.96l-.565.566c.78.78.78 2.048 0 2.828l.566.566ZM13.838 5.527a3.799 3.799 0 0 0 0-5.366l-.565.566a2.998 2.998 0 0 1 0 4.235l.566.565ZM11.556 7.741h-.8v.8h.8v-.8ZM17.956 4.542h-.8v.8h.8v-.8ZM9.956.941h-.8v.8h.8v-.8Z"
+                                        fill="#747474"
+                                    />
+                                </svg>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
+                                <div class="absolute top-0 right-0 bg-karaka rounded-full text-white w-5 h-5 flex items-center justify-center text-xs translate-x-1/2 -translate-y-1/2">1</div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
+                            <div class="h-[2px] w-12 bg-karaka"></div>
+                        </div>
+                        <div class="relative space-y-4 max-w-[17rem] sm:max-w-sm lg:max-w-[17rem]">
+                            <div class="lg:-left-1/2 relative flex items-center justify-between bg-karaka text-pampas px-4 py-5 rounded-xl">
+                                <div class="flex space-x-3">
+                                    <svg class="shrink-0" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.99982 7.00781H17.3331" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.4998 3.67383H4.83315C4.37291 3.67383 3.99982 4.04692 3.99982 4.50716V16.1738C3.99982 16.6341 4.37291 17.0072 4.83315 17.0072H16.4998C16.9601 17.0072 17.3331 16.6341 17.3331 16.1738V4.50716C17.3331 4.04692 16.9601 3.67383 16.4998 3.67383Z"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path d="M13.9998 2.00781V3.67448" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.33319 2.00781V3.67448" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <p>Lorem ipsum dolor.</p>
                                 </div>
+
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m8.666 12.526 4.243 4.242 8.485-8.485M3.667 12.526l4.242 4.242m5.257-5.227 3.228-3.258" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
+                            <div class="h-[2px] w-12 bg-karaka"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mx-auto max-w-7xl">
+                <div class="space-y-4 pt-24 md:pt-36 pb-20 text-center wow animate__animated animate__fadeInUp">
+                    <h2 class="font-medium text-4xl">How it works</h2>
+                    <p class="lg:leading-8 text-mine-shaft max-w-sm mx-auto">You can start investing in real esate after following these 4 easy steps</p>
+                </div>
+
+                <div>
+                    <div id="mySwipe" class="swipe overflow-hidden invisible relative">
+                        <ul class="swipe-wrap overflow-hidden relative">
+                            <li
+                                class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-3xl"
+                            >
+                                <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-4.png" />
+                                <div class="space-y-6 max-w-lg px-8">
+                                    <div class="text-3xl font-bold border-karaka border-2 rounded-full p-4 w-fit">01</div>
+                                    <p class="text-lg font-bold">Download the app from the appstore</p>
+                                    <p class="text-tundora text-lg font-medium">Download the app from the appstore and wait it to install correctly</p>
+                                    <a class="block w-fit bg-karaka text-white py-2 px-6 rounded-md text-sm" href="/">Start now</a>
+                                </div>
                             </li>
-                            <li class="bg-pampas flex px-4 space-x-3 py-5 lg:py-3 rounded-xl">
-                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#a)" fill="#747474">
-                                        <path d="M18.743 5.206a.5.5 0 0 0-.707-.708l.707.708Zm-6.01 4.596a.5.5 0 1 0 .707.707l-.708-.707Zm5.303-5.304-5.304 5.304.708.707 5.303-5.303-.707-.708Z" />
-                                        <path d="M16.032 10.656a.5.5 0 0 0 0-1v1Zm-2.946-.5h-.5a.5.5 0 0 0 .5.5v-.5Zm.5-2.947a.5.5 0 1 0-1 0h1Zm2.446 2.447h-2.946v1h2.946v-1Zm-2.446.5V7.209h-1v2.947h1Z" />
-                                    </g>
-                                    <path d="M4.732 17.802a.5.5 0 1 0 .707.707l-.707-.707Zm6.01-4.596a.5.5 0 1 0-.706-.707l.707.707ZM5.44 18.51l5.304-5.303-.707-.707-5.304 5.303.707.707Z" fill="#747474" />
-                                    <path d="M7.443 12.352a.5.5 0 1 0 0 1v-1Zm2.946.5h.5a.5.5 0 0 0-.5-.5v.5Zm-.5 2.946a.5.5 0 1 0 1 0h-1Zm-2.446-2.446h2.946v-1H7.443v1Zm2.446-.5v2.946h1v-2.946h-1Z" fill="#747474" />
-                                    <defs>
-                                        <clipPath id="a"><path fill="#fff" transform="rotate(-45 13.391 -6.71)" d="M0 0h10v10H0z" /></clipPath>
-                                    </defs></svg
-                                ><span>Lorem ipsum dolor.</span>
+                            <li
+                                class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-3xl"
+                            >
+                                <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-5.png" />
+                                <div class="space-y-6 max-w-lg px-8">
+                                    <div class="text-3xl font-bold border-karaka border-2 rounded-full p-4 w-fit">02</div>
+                                    <p class="text-lg font-bold">Buy a stake in properties you like</p>
+                                    <p class="text-tundora text-lg font-medium">Really fast process of buying a piece of an real estate with FIAT money or even crypto</p>
+                                    <a class="block w-fit bg-karaka text-white py-2 px-6 rounded-md text-sm" href="/">Start now</a>
+                                </div>
                             </li>
-                            <li class="bg-pampas flex px-4 space-x-3 py-5 lg:py-3 rounded-xl">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M2.167 15.087h15M15.41 7.362 10.16 2.77a.75.75 0 0 0-.987 0l-5.25 4.593a.75.75 0 0 0-.256.565v6.41c0 .414.335.75.75.75h3a.75.75 0 0 0 .75-.75v-3a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v3c0 .414.335.75.75.75h3a.75.75 0 0 0 .75-.75v-6.41a.75.75 0 0 0-.257-.565Z"
-                                        stroke="#747474"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    /></svg
-                                ><span>Lorem ipsum dolor.</span>
+                            <li
+                                class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-3xl"
+                            >
+                                <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-6.png" />
+                                <div class="space-y-6 max-w-lg px-8">
+                                    <div class="text-3xl font-bold border-karaka border-2 rounded-full p-4 w-fit">03</div>
+                                    <p class="text-lg font-bold">Track you investments in your dashboard</p>
+                                    <p class="text-tundora text-lg font-medium">You can easily get a quick overview of your investments in our dashboard</p>
+                                    <a class="block w-fit bg-karaka text-white py-2 px-6 rounded-md text-sm" href="/">Start now</a>
+                                </div>
+                            </li>
+                            <li
+                                class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-3xl"
+                            >
+                                <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-7.png" />
+                                <div class="space-y-6 max-w-lg px-8">
+                                    <div class="text-3xl font-bold border-karaka border-2 rounded-full p-4 w-fit">01</div>
+                                    <p class="text-lg font-bold">Download the app from the appstore</p>
+                                    <p class="text-tundora text-lg font-medium">Download the app from the appstore and wait it to install correctly</p>
+                                    <a class="block w-fit bg-karaka text-white py-2 px-6 rounded-md text-sm" href="/">Start now</a>
+                                </div>
                             </li>
                         </ul>
-                        <p class="lg:leading-6">Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
-                        <div class="h-[2px] w-12 bg-karaka"></div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2 lg:w-1/3 relative">
-                    <picture>
-                        <source srcset="./assets/images/phone-3.webp" type="image/webp" />
-                        <source srcset="./assets/images/phone-3.png" type="image/jpeg" />
-                        <img class="mx-auto wow animate__animated animate__pulse" src="./assets/images/phone-3.png" width="273" height="511" alt="" />
-                    </picture>
-                    <ul class="hidden absolute z-[-1] -bottom-[7%] -left-[34%] lg:flex space-x-4 bg-pampas py-4 px-4 rounded-xl">
-                        <li class="space-y-2">
-                            <svg class="ml-2" width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="18.451" cy="19.012" r="18.361" fill="#24160B" />
-                                <path d="M14.086 21.472a1 1 0 1 0 1.415 1.415l-1.415-1.415Zm6.976-4.147a1 1 0 0 0-1.414-1.414l1.414 1.414Zm-5.561 5.562 5.561-5.562-1.414-1.414-5.562 5.561 1.415 1.415Z" fill="#fff" />
-                                <path
-                                    d="m18.721 30.299-.894.447.894-.447Zm2.123-.176-.955-.294.955.294Zm-6.48-8.027-.448.895.447-.895Zm.513.514.894-.447-.894.447ZM6.85 16.129l.294.955-.294-.955Zm-.176 2.123-.447.894.447-.894Zm18.318-7.705.294.955-.294-.956Zm1.435 1.434.955.294-.955-.294Zm-1.729-2.39L6.556 15.173l.588 1.911 18.142-5.582-.588-1.911Zm-18.47 9.555 7.688 3.845.895-1.789-7.69-3.845-.894 1.79Zm7.754 3.91 3.845 7.69 1.789-.894-3.845-7.69-1.789.895Zm7.818 7.361 5.582-18.142-1.911-.588-5.582 18.142 1.911.588Zm-3.973.329c.866 1.733 3.403 1.523 3.973-.329l-1.911-.588c-.014.046-.033.064-.046.074a.158.158 0 0 1-.083.03.159.159 0 0 1-.087-.016c-.014-.008-.036-.023-.057-.066l-1.79.895Zm-3.91-7.755a.148.148 0 0 1 .065.066l1.79-.894a2.147 2.147 0 0 0-.961-.961l-.895 1.789Zm-7.36-7.818c-1.853.57-2.063 3.107-.33 3.973l.895-1.788c-.043-.022-.058-.043-.066-.058a.16.16 0 0 1-.015-.087.16.16 0 0 1 .029-.082c.01-.014.028-.032.074-.047l-.588-1.911Zm18.73-3.67a.137.137 0 0 1 .08-.005.155.155 0 0 1 .067.041.155.155 0 0 1 .04.068.136.136 0 0 1-.003.08l1.911.588c.507-1.648-1.036-3.191-2.684-2.684l.588 1.911Z"
-                                    fill="#fff"
-                                />
-                            </svg>
-                            <span class="text-black inline-block text-xs">1st Session</span>
-                        </li>
-                        <li class="space-y-2">
-                            <svg class="ml-2" width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="18.487" cy="19.012" r="18.361" fill="#24160B" />
-                                <path
-                                    d="M14.815 16.796h1a1 1 0 0 0-1-1v1Zm0 11.017v1a1 1 0 0 0 1-1h-1Zm-7.345 0h-1a1 1 0 0 0 1 1v-1Zm1.224-10.017h6.12v-2h-6.12v2Zm5.12-1v11.017h2V16.796h-2Zm1 10.017H7.47v2h7.345v-2Zm-6.344 1V18.02h-2v9.793h2Zm.224-12.017A2.224 2.224 0 0 0 6.47 18.02h2c0-.124.1-.224.224-.224v-2ZM22.159 13.124v-1a1 1 0 0 0-1 1h1Zm7.345 14.689v1a1 1 0 0 0 1-1h-1Zm-7.345 0h-1a1 1 0 0 0 1 1v-1Zm0-13.689h6.12v-2h-6.12v2Zm6.345.224v13.465h2V14.348h-2Zm1 12.465h-7.345v2h7.345v-2Zm-6.345 1V13.124h-2v14.689h2Zm5.12-13.689c.124 0 .224.1.224.224h2a2.224 2.224 0 0 0-2.224-2.224v2Z"
-                                    fill="#fff"
-                                />
-                                <path
-                                    d="M22.159 27.813v1a1 1 0 0 0 1-1h-1Zm-7.344 0h-1a1 1 0 0 0 1 1v-1Zm1.224-18.585h4.896v-2h-4.896v2Zm5.12.224v18.36h2V9.453h-2Zm1 17.36h-7.344v2h7.344v-2Zm-6.344 1V9.453h-2v18.36h2Zm5.12-18.584c.124 0 .224.1.224.224h2a2.224 2.224 0 0 0-2.224-2.224v2Zm-4.896-2a2.224 2.224 0 0 0-2.225 2.224h2c0-.124.1-.224.225-.224v-2Z"
-                                    fill="#fff"
-                                />
-                            </svg>
-                            <span class="text-black inline-block text-xs">3-Day Streak</span>
-                        </li>
-                        <li class="space-y-2">
-                            <svg class="ml-2" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="19.176" cy="19.012" r="18.361" fill="#24160B" />
-                                <path d="M19.175 24.75a5.738 5.738 0 1 0 0-11.476 5.738 5.738 0 0 0 0 11.476Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M18.175 9.831a1 1 0 0 0 2 0h-2Zm2-2.295a1 1 0 1 0-2 0h2Zm0 20.656a1 1 0 1 0-2 0h2Zm-2 2.296a1 1 0 0 0 2 0h-2Zm2-20.657V7.536h-2v2.295h2Zm-2 18.361v2.296h2v-2.296h-2ZM12.058 13.31a1 1 0 0 0 1.414-1.415l-1.414 1.415Zm-.209-3.038a1 1 0 0 0-1.414 1.415l1.414-1.415ZM26.456 24.88a1 1 0 0 0-1.415 1.414l1.415-1.414Zm.208 3.037a1 1 0 0 0 1.414-1.415l-1.414 1.415Zm-13.192-16.02-1.623-1.624-1.414 1.415 1.623 1.623 1.414-1.415Zm11.57 14.397 1.622 1.623 1.414-1.415-1.622-1.622-1.415 1.414ZM9.995 20.012a1 1 0 1 0 0-2v2Zm-2.296-2a1 1 0 1 0 0 2v-2Zm20.657 0a1 1 0 1 0 0 2v-2Zm2.295 2a1 1 0 0 0 0-2v2Zm-20.656-2H7.699v2h2.296v-2Zm18.36 2h2.296v-2h-2.295v2ZM25.041 11.895a1 1 0 0 0 1.414 1.415l-1.414-1.415Zm3.037-.208a1 1 0 0 0-1.414-1.415l1.414 1.415ZM13.472 26.293a1 1 0 0 0-1.414-1.414l1.414 1.414Zm-3.037.209a1 1 0 0 0 1.414 1.414L10.435 26.5Zm16.02-13.192 1.623-1.623-1.414-1.415-1.623 1.623 1.414 1.415ZM12.058 24.879 10.435 26.5l1.414 1.415 1.623-1.623-1.414-1.414Z"
-                                    fill="#fff"
-                                />
-                            </svg>
-                            <span class="text-black inline-block text-xs">7-Day Streak</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="order-3 lg:w-1/3 flex flex-col justify-between space-y-16 lg:space-y-0">
-                    <div class="relative mr-0 ml-auto space-y-4 max-w-[17rem] sm:max-w-sm lg:max-w-[17rem]">
-                        <div class="flex items-center space-x-3 bg-pampas text-boulder px-4 py-3 rounded-xl">
-                            <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M3.174 11.742h-.018v.042L.008 19.289l13.852-5.81-8.043-8.041-2.643 6.304Zm4.782 3.346-1.6.671V7.107l1.6 1.6v6.381Zm.8-5.58 1.6 1.6v2.974l-1.6.67V9.508Zm-3.2 6.587-1.6.67v-4.82l1.6-3.816v7.966Zm-2.4-2.242V17.1l-1.653.693 1.653-3.941Zm8-.107v-1.839l1.296 1.296-1.296.543ZM10.356 3.342c-.883 0-1.6.717-1.6 1.6 0 .882.717 1.6 1.6 1.6.882 0 1.6-.718 1.6-1.6 0-.883-.718-1.6-1.6-1.6Zm0 2.4a.8.8 0 1 1 .001-1.602.8.8 0 0 1-.001 1.602ZM17.556.142c-.883 0-1.6.717-1.6 1.6 0 .882.717 1.6 1.6 1.6.882 0 1.6-.718 1.6-1.6 0-.883-.718-1.6-1.6-1.6Zm0 2.4A.8.8 0 1 1 17.557.94a.8.8 0 0 1-.001 1.602ZM15.556 6.542c-.883 0-1.6.718-1.6 1.6 0 .882.717 1.6 1.6 1.6.882 0 1.6-.718 1.6-1.6 0-.882-.718-1.6-1.6-1.6Zm0 2.4a.8.8 0 1 1 .001-1.602.8.8 0 0 1-.001 1.602ZM13.879 12.011l.566.566a2.852 2.852 0 0 1 4.028 0l.566-.566a3.652 3.652 0 0 0-5.16 0ZM7.038 5.625a2.803 2.803 0 0 0 0-3.96l-.565.566c.78.78.78 2.048 0 2.828l.566.566ZM13.838 5.527a3.799 3.799 0 0 0 0-5.366l-.565.566a2.998 2.998 0 0 1 0 4.235l.566.565ZM11.556 7.741h-.8v.8h.8v-.8ZM17.956 4.542h-.8v.8h.8v-.8ZM9.956.941h-.8v.8h.8v-.8Z"
-                                    fill="#747474"
-                                />
-                            </svg>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
-                            <div class="absolute top-0 right-0 bg-karaka rounded-full text-white w-5 h-5 flex items-center justify-center text-xs translate-x-1/2 -translate-y-1/2">1</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
-                        <div class="h-[2px] w-12 bg-karaka"></div>
-                    </div>
-                    <div class="relative space-y-4 max-w-[17rem] sm:max-w-sm lg:max-w-[17rem]">
-                        <div class="lg:-left-1/2 relative flex items-center justify-between bg-karaka text-pampas px-4 py-5 rounded-xl">
-                            <div class="flex space-x-3">
-                                <svg class="shrink-0" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3.99982 7.00781H17.3331" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                        d="M16.4998 3.67383H4.83315C4.37291 3.67383 3.99982 4.04692 3.99982 4.50716V16.1738C3.99982 16.6341 4.37291 17.0072 4.83315 17.0072H16.4998C16.9601 17.0072 17.3331 16.6341 17.3331 16.1738V4.50716C17.3331 4.04692 16.9601 3.67383 16.4998 3.67383Z"
-                                        stroke="white"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path d="M13.9998 2.00781V3.67448" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7.33319 2.00781V3.67448" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <ul class="top-20 md:top-1/2 md:-translate-y-1/2 left-8 absolute space-y-4 flex flex-col">
+                            <li>
+                                <svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17V7M8 11l4-4 4 4" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                            </li>
+                            <li class="text-xs font-medium active-tab relative cursor-pointer">
+                                <svg class="w-8 h-8" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <circle cx="50%" cy="50%" class="fill-transparent" r="10" stroke="#E2E2E2" stroke-width="1px"></circle>
+                                    <circle class="active-tab:bullet-ring" class="active-tab:bullet-ring" cx="50%" cy="50%" fill="transparent" r="10" stroke="#24160B" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
+                                </svg>
+                                <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">01</span>
+                            </li>
+                            <li class="text-xs font-medium relative cursor-pointer">
+                                <svg class="w-8 h-8" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <circle cx="50%" cy="50%" class="fill-transparent" r="10" stroke="#E2E2E2" stroke-width="1px"></circle>
+                                    <circle class="active-tab:bullet-ring" class="active-tab:bullet-ring" cx="50%" cy="50%" fill="transparent" r="10" stroke="#24160B" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
+                                </svg>
+                                <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">02</span>
+                            </li>
+                            <li class="text-xs font-medium relative cursor-pointer">
+                                <svg class="w-8 h-8" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <circle cx="50%" cy="50%" class="fill-transparent" r="10" stroke="#E2E2E2" stroke-width="1px"></circle>
+                                    <circle class="active-tab:bullet-ring" class="active-tab:bullet-ring" cx="50%" cy="50%" fill="transparent" r="10" stroke="#24160B" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
                                 </svg>
 
-                                <p>Lorem ipsum dolor.</p>
-                            </div>
-
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m8.666 12.526 4.243 4.242 8.485-8.485M3.667 12.526l4.242 4.242m5.257-5.227 3.228-3.258" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
-                        <div class="h-[2px] w-12 bg-karaka"></div>
+                                <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">03</span>
+                            </li>
+                            <li class="text-xs font-medium relative cursor-pointer">
+                                <svg class="w-8 h-8" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <circle cx="50%" cy="50%" class="fill-transparent" r="10" stroke="#E2E2E2" stroke-width="1px"></circle>
+                                    <circle class="active-tab:bullet-ring" class="active-tab:bullet-ring" cx="50%" cy="50%" fill="transparent" r="10" stroke="#24160B" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
+                                </svg>
+                                <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">04</span>
+                            </li>
+                            <li>
+                                <svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7V17" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16 13L12 17L8 13" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </ul>
                     </div>
+
+                    <!-- <div style="text-align: center; padding-top: 20px">
+                        <button onclick="mySwipe.prev()">prev</button>
+                        <button onclick="mySwipe.next()">next</button>
+                    </div> -->
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <script src="./assets/js/wow.min.js"></script>
+        <script src="./assets/js/swipe.min.js"></script>
         <script>
             new WOW().init();
+        </script>
+        <script>
+            var e = document.getElementById("mySwipe");
+            window.mySwipe = Swipe(e, {
+                auto: 3000,
+                draggable: false,
+            });
+
+            var tabs = document.querySelectorAll(".swipe > ul:nth-child(2) li.text-xs");
+            tabs.forEach(function (elem, i) {
+                elem.addEventListener("click", function () {
+                    mySwipe.slide(i);
+                });
+            });
         </script>
     </body>
 </html>
