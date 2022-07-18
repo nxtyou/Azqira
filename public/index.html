@@ -384,16 +384,16 @@
                 </section>
 
                 <section class="mx-auto max-w-7xl">
-                    <div class="space-y-4 pt-24 md:pt-36 pb-20 text-center wow animate__animated animate__fadeInUp">
+                    <div class="space-y-4 px-6 pt-24 md:pt-36 pb-20 text-center wow animate__animated animate__fadeInUp">
                         <h2 class="font-medium text-4xl">How it works</h2>
                         <p class="lg:leading-8 text-mine-shaft max-w-sm mx-auto">You can start investing in real esate after following these 4 easy steps</p>
                     </div>
 
                     <div>
                         <div id="mySwipe" class="swipe overflow-hidden invisible relative">
-                            <ul class="swipe-wrap overflow-hidden relative">
+                            <ul class="overflow-hidden relative flex">
                                 <li
-                                    class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
+                                    class="w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
                                 >
                                     <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-4.png" />
                                     <div class="space-y-6 max-w-lg px-8 wow animate__animated animate__fadeInRight">
@@ -404,7 +404,7 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
+                                    class="w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
                                 >
                                     <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-5.png" />
                                     <div class="space-y-6 max-w-lg px-8">
@@ -415,7 +415,7 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
+                                    class="w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
                                 >
                                     <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-6.png" />
                                     <div class="space-y-6 max-w-lg px-8">
@@ -426,7 +426,7 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="float-left w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
+                                    class="w-full space-y-8 md:space-y-0 relative flex flex-col md:flex-row items-center justify-center before:bg-pampas before:w-full before:block before:top-12 md:before:top-[inherit] before:h-80 md:before:h-[90%] before:absolute before:z-[-1] before:content-[' '] md:before:rounded-xl"
                                 >
                                     <img class="w-52 md:w-auto md:mx-32" src="./assets/images/phone-7.png" />
                                     <div class="space-y-6 max-w-lg px-8">
@@ -439,7 +439,9 @@
                             </ul>
                             <ul class="top-20 md:top-1/2 md:-translate-y-1/2 left-8 absolute space-y-4 flex flex-col">
                                 <li>
-                                    <svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17V7M8 11l4-4 4 4" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                    <button class="mx-auto block" onclick="mySwipe.prev()">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17V7M8 11l4-4 4 4" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                    </button>
                                 </li>
                                 <li class="text-xs font-medium active-tab relative cursor-pointer">
                                     <svg class="w-8 h-8" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -471,18 +473,65 @@
                                     <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">04</span>
                                 </li>
                                 <li>
-                                    <svg class="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 7V17" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M16 13L12 17L8 13" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                                    <button class="mx-auto block" onclick="mySwipe.next()">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 7V17" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 13L12 17L8 13" stroke="#202028" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <section class="max-w-6xl mx-auto py-32 px-6 space-y-4 md:space-y-16">
-                    <div class="flex flex-col justify-between md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                <section class="mx-auto max-w-7xl">
+                    <div class="space-y-4 px-6 pt-24 pb-12 md:pt-36 md:pb-20 text-center wow animate__animated animate__fadeInUp">
+                        <h2 class="font-medium text-4xl">Our beatiful Team</h2>
+                        <p class="lg:leading-8 text-mine-shaft max-w-sm mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales a, tristique</p>
+                    </div>
+
+                    <div id="mySwipe2" class="overflow-hidden relative">
+                        <ul class="overflow-hidden relative flex md:justify-around items-center text-center text-2xl">
+                            <li class="w-full relative">
+                                <img class="rounded-full mx-auto wow animate__animated animate__zoomIn w-[14.375rem] md:w-auto md:border-4 md:border-mantle" src="./assets/images/y-1.png" width="230" height="230" alt="" />
+                                <h3 class="font-bold mt-5 text-tundora">Lorem Ipsum</h3>
+                                <p class="text-silver-chalice mt-3">COO</p>
+                            </li>
+                            <li class="w-full relative">
+                                <img class="rounded-full mx-auto wow animate__animated animate__zoomIn w-[14.375rem] md:w-auto md:border-4 md:border-mantle" src="./assets/images/y-2.png" width="320" height="320" alt="" />
+                                <h3 class="font-bold mt-5 text-tundora">Lorem Ipsum</h3>
+                                <p class="text-silver-chalice mt-3">COO</p>
+                            </li>
+                            <li class="w-full relative">
+                                <img class="rounded-full mx-auto wow animate__animated animate__zoomIn w-[14.375rem] md:w-auto md:border-4 md:border-mantle" src="./assets/images/y-3.png" width="230" height="230" alt="" />
+                                <h3 class="font-bold mt-5 text-tundora">Lorem Ipsum</h3>
+                                <p class="text-silver-chalice mt-3">COO</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center space-x-4 mt-8 md:hidden">
+                        <button class="w-12 h-12 relative border border-mantle rounded-full" onclick="teamSwipe.prev()">
+                            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-fit pr-1" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.24121 15.0918C7.70612 15.5567 8.45989 15.5567 8.9248 15.0918C9.38971 14.6269 9.38971 13.8731 8.9248 13.4082L7.24121 15.0918ZM1.83301 8L0.991214 7.15821C0.526304 7.62312 0.526304 8.37688 0.991214 8.84179L1.83301 8ZM8.9248 2.59179C9.38971 2.12688 9.38971 1.37312 8.9248 0.908206C8.45989 0.443296 7.70612 0.443296 7.24121 0.908206L8.9248 2.59179ZM8.9248 13.4082L2.6748 7.15821L0.991214 8.84179L7.24121 15.0918L8.9248 13.4082ZM2.6748 8.84179L8.9248 2.59179L7.24121 0.908206L0.991214 7.15821L2.6748 8.84179Z"
+                                    fill="#747474"
+                                />
+                            </svg>
+                        </button>
+                        <button class="w-12 h-12 relative border border-mantle rounded-full" onclick="teamSwipe.next()">
+                            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-fit pl-[0.1rem]" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.889.908a1.19 1.19 0 0 0-1.684 1.684L2.89.908ZM8.297 8l.842.842a1.19 1.19 0 0 0 0-1.684L8.297 8Zm-7.092 5.408a1.19 1.19 0 0 0 1.684 1.684l-1.684-1.684Zm0-10.816 6.25 6.25L9.14 7.158 2.889.908 1.205 2.592Zm6.25 4.566-6.25 6.25 1.684 1.684 6.25-6.25-1.684-1.684Z"
+                                    fill="#747474"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="max-w-6xl mx-auto pt-24 md:py-32 px-6 space-y-4 md:space-y-16">
+                    <div class="flex flex-col justify-between md:flex-row space-y-8 md:space-y-0 md:space-x-8">
                         <div class="space-y-4 wow animate__animated animate__fadeInLeft md:max-w-md text-center md:text-left">
                             <h2 class="font-medium text-4xl">What our clients say</h2>
                             <p class="lg:leading-8">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
@@ -491,7 +540,7 @@
                             <img src="./assets/images/logo-ipsum-1.svg" width="141" height="31" alt="" />
                             <p class="text-alto leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
                             <div class="flex space-x-4">
-                                <img src="./assets/images/pfp-1.png" width="47" height="47" alt="" />
+                                <img class="rounded-full" src="./assets/images/y-3.png" width="47" height="47" alt="" />
                                 <div>
                                     <h4 class="font-medium">Adam Smith</h4>
                                     <p class="font-medium text-alto/95">Web Designer at Airtable</p>
@@ -504,7 +553,7 @@
                             <img src="./assets/images/logo-ipsum-2.svg" width="125" height="33" alt="" />
                             <p class="text-alto leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
                             <div class="flex space-x-4">
-                                <img src="./assets/images/pfp-1.png" width="47" height="47" alt="" />
+                                <img class="rounded-full" src="./assets/images/y-3.png" width="47" height="47" alt="" />
                                 <div>
                                     <h4 class="font-medium">Sophie Moore</h4>
                                     <p class="font-medium text-alto/95">Product Developer at Webflow</p>
@@ -515,7 +564,7 @@
                             <img src="./assets/images/logo-ipsum-3.svg" width="133" height="18" alt="" />
                             <p class="text-alto leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
                             <div class="flex space-x-4">
-                                <img src="./assets/images/pfp-1.png" width="47" height="47" alt="" />
+                                <img class="rounded-full" src="./assets/images/y-3.png" width="47" height="47" alt="" />
                                 <div>
                                     <h4 class="font-medium">Sophie Moore</h4>
                                     <p class="font-medium text-alto/95">Product Developer at Webflow</p>
@@ -530,8 +579,8 @@
                 <div class="max-w-7xl mx-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-between items-center">
                     <img src="./assets/images/logo.svg" alt="AZQIRA" width="160" height="32" />
                     <ul class="flex space-x-4">
-                        <li><a class="hover:underline" href="/">Legal Disclosure</a></li>
-                        <li><a class="hover:underline" href="/">Privacy Policy</a></li>
+                        <li><a class="hover:underline text-sm md:text-base" href="/">Legal Disclosure</a></li>
+                        <li><a class="hover:underline text-sm md:text-base" href="/">Privacy Policy</a></li>
                     </ul>
                 </div>
             </footer>
@@ -544,10 +593,19 @@
         </script>
         <script>
             var e = document.getElementById("mySwipe");
-            window.mySwipe = Swipe(e, {
-                auto: 3000,
-                draggable: false,
-            });
+            var mySwipe = Swipe(
+                e,
+                {
+                    auto: 3000,
+                    draggable: false,
+                },
+                function (index, to) {
+                    
+                    var previousIndex = to === -1 ? 3 : to === 4 ? 1 : to;
+                    tabs[previousIndex].classList.add("active-tab");
+                    tabs[index].classList.remove("active-tab");
+                }
+            );
 
             var tabs = document.querySelectorAll(".swipe > ul:nth-child(2) li.text-xs");
             tabs.forEach(function (elem, i) {
@@ -555,6 +613,29 @@
                     mySwipe.slide(i);
                 });
             });
+
+            window.teamSwipe = null;
+            var needsReset = false;
+            var e2 = document.getElementById("mySwipe2");
+            var state = true;
+
+            window.onresize = function () {
+                if (!state && this.innerWidth <= 768) {
+                    teamSwipe.setup();
+                    state = true;
+                } else if (state && this.innerWidth > 768) {
+                    teamSwipe.kill();
+                    state = false;
+                }
+            };
+
+            window.onload = function () {
+                window.teamSwipe = Swipe(e2, { startSlide: 1 });
+
+                if (innerWidth > 768) {
+                    teamSwipe.kill();
+                }
+            };
         </script>
     </body>
 </html>

@@ -20,7 +20,10 @@ module.exports = {
                 karaka: "#24160B",
                 tundora: "#494949",
                 "cold-gray": "#181818",
-                alto: "#D3D3D3"
+                alto: "#D3D3D3",
+                "silver-chalice": "#9F9F9F",
+                tundora: "#414141",
+                mantle: "#96A196"
             }
         },
     },
