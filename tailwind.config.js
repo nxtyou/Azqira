@@ -19,6 +19,8 @@ module.exports = {
                 pampas: "#F2EFE8",
                 karaka: "#24160B",
                 tundora: "#494949",
+                "cold-gray": "#181818",
+                alto: "#D3D3D3"
             }
         },
     },
