@@ -23,8 +23,10 @@ module.exports = {
                 alto: "#D3D3D3",
                 "silver-chalice": "#9F9F9F",
                 tundora: "#414141",
-                mantle: "#96A196"
-            }
+                mantle: "#96A196",
+                trout: "#495057",
+                "athens-gray": "#F8F9FA",
+            },
         },
     },
     plugins: [
