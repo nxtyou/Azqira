@@ -19,6 +19,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/tailwind.min.css" />
         <link rel="stylesheet" href="./assets/css/animate.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     </head>
     <body class="font-aktiv text-black overflow-x-auto">
         <div class="overflow-hidden">
@@ -483,6 +484,42 @@
                     </div>
                 </section>
 
+                <section class="pt-24 md:pt-32 flex flex-col md:flex-row items-center mx-auto max-w-7xl">
+                    <div class="swiper mySwiper w-[70%] md:w-[36%] order-2 mt-8 px-16 wow animate__animated animate__zoomIn">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide rounded-2xl" src="./assets/images/h3.jpg" alt="" />
+                            <img class="swiper-slide rounded-2xl" src="./assets/images/h2.jpg" alt="" />
+                            <img class="swiper-slide rounded-2xl" src="./assets/images/h1.jpg" alt="" />
+                            <img class="swiper-slide rounded-2xl" src="./assets/images/h4.jpg" alt="" />
+                            <img class="swiper-slide rounded-2xl" src="./assets/images/h5.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:px-16 order-1 md:order-2 px-6 wow animate__animated animate__fadeInRight">
+                        <h2 class="font-medium text-4xl">Be part of the hotel market</h2>
+                        <p class="md:leading-8 mt-4">
+                            The opportunity to invest in luxury real estate has never been more significant. With a portfolio that deals exclusively in projects involving hotels, resorts, and other first-class travel destinations. Now you can make money where others spend their holidays.
+                        </p>
+                        <div class="space-x-4 mt-8">
+                            <button aria-label="previous" class="cards-button-next w-12 h-12 relative border border-mantle rounded-full" onclick="teamSwipe.prev()">
+                                <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-fit pr-1" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.24121 15.0918C7.70612 15.5567 8.45989 15.5567 8.9248 15.0918C9.38971 14.6269 9.38971 13.8731 8.9248 13.4082L7.24121 15.0918ZM1.83301 8L0.991214 7.15821C0.526304 7.62312 0.526304 8.37688 0.991214 8.84179L1.83301 8ZM8.9248 2.59179C9.38971 2.12688 9.38971 1.37312 8.9248 0.908206C8.45989 0.443296 7.70612 0.443296 7.24121 0.908206L8.9248 2.59179ZM8.9248 13.4082L2.6748 7.15821L0.991214 8.84179L7.24121 15.0918L8.9248 13.4082ZM2.6748 8.84179L8.9248 2.59179L7.24121 0.908206L0.991214 7.15821L2.6748 8.84179Z"
+                                        fill="#747474"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <button aria-label="next" class="cards-button-prev w-12 h-12 relative border border-mantle rounded-full" onclick="teamSwipe.next()">
+                                <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-fit pl-[0.1rem]" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.889.908a1.19 1.19 0 0 0-1.684 1.684L2.89.908ZM8.297 8l.842.842a1.19 1.19 0 0 0 0-1.684L8.297 8Zm-7.092 5.408a1.19 1.19 0 0 0 1.684 1.684l-1.684-1.684Zm0-10.816 6.25 6.25L9.14 7.158 2.889.908 1.205 2.592Zm6.25 4.566-6.25 6.25 1.684 1.684 6.25-6.25-1.684-1.684Z"
+                                        fill="#747474"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="py-36 bg-[url('../images/wall.jpg')] text-white text-center mt-24 md:mt-32 bg-no-repeat bg-cover bg-center mx-auto flex flex-col items-center px-6">
                     <div class="flex items-center space-x-3">
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -503,7 +540,7 @@
                         <p class="lg:leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales a, tristique</p>
                     </div>
                     <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4">
-                        <div class="space-y-4 ">
+                        <div class="space-y-4">
                             <div class="flex items-center space-x-2 font-medium text-lg md:text-sm">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25.8333 28.6231V27.2897C25.8333 25.0806 24.0425 23.2897 21.8333 23.2897H11.1667C8.95753 23.2897 7.16667 25.0806 7.16667 27.2897V28.6231" stroke="#1E54A6" stroke-width="2.5" />
@@ -514,7 +551,7 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales a, tristique hendrerit scelerisque justo amet viverra sit volutpat.</p>
                         </div>
-                        <div class="space-y-4 ">
+                        <div class="space-y-4">
                             <div class="flex items-center space-x-2 font-medium text-lg md:text-sm">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M27.1667 25.9564V16.9564C27.1667 15.2995 25.8235 13.9564 24.1667 13.9564H8.83334C7.17649 13.9564 5.83334 15.2995 5.83334 16.9564V25.9564" stroke="#1E54A6" stroke-width="2.5" />
@@ -527,7 +564,7 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales a, tristique hendrerit scelerisque justo amet viverra sit volutpat.</p>
                         </div>
-                        <div class="space-y-4 ">
+                        <div class="space-y-4">
                             <div class="flex items-center space-x-2 font-medium text-lg md:text-sm">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -542,7 +579,7 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales a, tristique hendrerit scelerisque justo amet viverra sit volutpat.</p>
                         </div>
-                        <div class="space-y-4 ">
+                        <div class="space-y-4">
                             <div class="flex items-center space-x-2 font-medium text-lg md:text-sm">
                                 <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -723,6 +760,23 @@
                     teamSwipe.kill();
                 }
             };
+        </script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "cards",
+                grabCursor: true,
+                navigation: {
+                    nextEl: ".cards-button-next",
+                    prevEl: ".cards-button-prev",
+                },
+                initialSlide: 2,
+                loop: true,
+            });
         </script>
     </body>
 </html>
