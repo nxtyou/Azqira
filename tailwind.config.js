@@ -6,10 +6,12 @@ module.exports = {
         extend: {
             fontFamily: {
                 aktiv: ["Aktiv Grotesk Corp", "sans-serif"],
+                raleway: ["Raleway", "sans-serif"]
             },
             colors: {
                 black: "#202028",
                 zeus: "#17120E",
+                gray: "#838383",
                 "cold-gray": "#181818",
                 shark: "#1F2123",
                 shamrock: "#27D17E",
