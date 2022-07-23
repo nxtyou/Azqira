@@ -1,4 +1,6 @@
 (function () {
+    new WOW().init();
+
     var swiper1 = new Swiper(".mySwiper1", {
         effect: "cards",
         grabCursor: true,
@@ -69,4 +71,47 @@
     breakpoint.addListener(breakpointChecker);
 
     breakpointChecker();
+
+    // Scrolling animation
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.matchMedia({
+        "(min-width: 800px)": function () {
+            const timelinePhone = gsap.timeline();
+            timelinePhone
+                .to(".phone-animation", {
+                    // x: window.innerWidth / 2.5,
+                    // xPercent: 50,
+                    x: window.innerWidth/2, xPercent: -50
+                })
+                .to(
+                    "#text-animation",
+                    {
+                        y: -window.innerHeight,
+                    },
+                    "<"
+                )
+                .to(".phone-animation", {
+                    rotation: 0,
+                    scale: 0.8,
+                })
+                .to("#circle-animation", { scale: 1 })
+                .to(".img-left-primary-1", { x: -innerWidth / 3.2, y: -innerHeight / 3.2, scale: 1 }, "<")
+                .to(".img-left-primary-2", { x: -innerWidth / 2.8, scale: 1 }, "<")
+                .to(".img-left-primary-3", { x: -innerWidth / 3.2, y: innerHeight / 3.2, scale: 1 }, "<")
+                .to(".img-right-primary-1", { x: innerWidth / 3.2, y: innerHeight / 3.2, scale: 1 }, "<")
+                .to(".img-right-primary-2", { x: innerWidth / 2.8, scale: 1 }, "<")
+                .to(".img-right-primary-3", { x: innerWidth / 3.2, y: -innerHeight / 3.2, scale: 1 }, "<");
+
+            const controllerPhone = new ScrollMagic.Controller();
+            const scenePhone = new ScrollMagic.Scene({
+                triggerElement: "#feature-animation",
+                duration: 2000,
+                triggerHook: 0,
+            })
+                .setTween(timelinePhone)
+                // .addIndicators()
+                .setPin("#feature-animation")
+                .addTo(controllerPhone);
+        },
+    });
 })();
