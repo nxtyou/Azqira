@@ -28,6 +28,7 @@ module.exports = {
                 mantle: "#96A196",
                 trout: "#495057",
                 "athens-gray": "#F8F9FA",
+                "silver-chalice": "#A6A6A6"
             },
         },
     },

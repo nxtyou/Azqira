@@ -131,17 +131,22 @@
     }
 }
 
-.active-tab {
+.swiper-pagination-bullet {
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active span {
+    --tw-text-opacity: 1;
     color: rgb(36 22 11 / var(--tw-text-opacity));
 }
 
-.active-tab svg {
+.swiper-pagination-bullet-active svg {
     opacity: 1;
     transform: rotate(-90deg);
     transition: opacity 0.1s;
 }
 
-.active-tab circle:nth-child(2) {
+.swiper-pagination-bullet-active circle:nth-child(2) {
     -webkit-animation: bullet-ring;
     animation: bullet-ring;
     -webkit-animation-duration: 3s;
