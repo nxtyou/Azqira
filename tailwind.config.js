@@ -5,10 +5,14 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                aktiv: ["Aktiv Grotesk Corp", "sans-serif"],
+                aktiv: ["Aktiv Grotesk Corp"],
                 raleway: ["Raleway", "sans-serif"]
             },
             colors: {
+                white: "#FDFDFD",
+                greenish: "#27D17E",
+                blackish: "#24160B",
+                bgbutton: '#222222',
                 black: "#202028",
                 zeus: "#17120E",
                 gray: "#838383",
@@ -30,6 +34,12 @@ module.exports = {
                 "athens-gray": "#F8F9FA",
                 "silver-chalice": "#A6A6A6"
             },
+            backgroundImage: {
+                hero: "url(../images/hero-bg.jpg)"
+            },
+            transitionProperty: {
+                'width': "width"
+            }
         },
     },
     plugins: [

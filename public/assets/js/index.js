@@ -21,10 +21,10 @@
 
                 return `
                     <div class="text-xs font-medium relative cursor-pointer ${className} w-auto h-auto bg-inherit">
-                        <svg class="w-8 h-8" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                            <circle cx="50%" cy="50%" class="fill-transparent" r="10" stroke="#E2E2E2" stroke-width="1px"></circle>
-                            <circle cx="50%" cy="50%" fill="transparent" r="10" stroke="#24160B" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="asset-data__count__svg" version="1.1">
+                        <circle cx="50%" cy="50%" fill="#f5f5f5" r="12" stroke="#E2E2E2" stroke-width="1px"></circle> 
+                        <circle cx="50%" cy="50%" fill="transparent" r="12" stroke="#27D17F" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
+                    </svg>
                         <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-silver-chalice">${index + 1}</span>
                     </div>
                 `;
@@ -115,3 +115,24 @@
         },
     });
 })();
+
+
+const heroText = document.getElementById("hero-text")
+function heroChange() {
+    let nextSpan = document.querySelector("#hero-text .opacity-100")
+    console.log(nextSpan.offsetWidth)
+    heroText.style.width = `${nextSpan.offsetWidth}px`
+    setTimeout(()=>{
+        nextSpan.classList.remove("opacity-100")
+        if (nextSpan.nextElementSibling.innerText != "") {
+                nextSpan.nextElementSibling.classList.add("opacity-100")
+        } else {
+            heroText.firstElementChild.classList.add("opacity-100")
+        }
+    },3250)
+    setTimeout(()=>{
+        heroText.style.width = "0px"
+    },2500)
+}
+heroChange()
+setInterval(heroChange, 3650)
