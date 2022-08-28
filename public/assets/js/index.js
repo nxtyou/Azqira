@@ -20,8 +20,8 @@
                 // return '<span class="' + className + '">' + (index + 1) + "</span>";
 
                 return `
-                    <div class="text-xs font-medium relative cursor-pointer ${className} w-auto h-auto bg-inherit">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="asset-data__count__svg" version="1.1">
+                    <div class="text-xs font-medium relative cursor-pointer ${className} w-auto h-auto bg-inherit h-[32px] rotating-bullet">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="asset-data__count__svg" version="1.1" width="32px" height="32px" class="opacity-0">
                         <circle cx="50%" cy="50%" fill="#f5f5f5" r="12" stroke="#E2E2E2" stroke-width="1px"></circle> 
                         <circle cx="50%" cy="50%" fill="transparent" r="12" stroke="#27D17F" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
                     </svg>
@@ -34,9 +34,9 @@
             nextEl: ".cards-2-button-next",
             prevEl: ".cards-2-button-prev",
         },
-        loop: true,
+        rewind: true,
         autoplay: {
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
         },
     });
@@ -78,22 +78,6 @@
         "(min-width: 800px)": function () {
             const timelinePhone = gsap.timeline();
             timelinePhone
-                .to(".phone-animation", {
-                    // x: window.innerWidth / 2.5,
-                    // xPercent: 50,
-                    x: window.innerWidth/2, xPercent: -50
-                })
-                .to(
-                    "#text-animation",
-                    {
-                        y: -window.innerHeight,
-                    },
-                    "<"
-                )
-                .to(".phone-animation", {
-                    rotation: 0,
-                    scale: 0.8,
-                })
                 .to("#circle-animation", { scale: 1 })
                 .to(".img-left-primary-1", { x: -innerWidth / 3.2, y: -innerHeight / 3.2, scale: 1 }, "<")
                 .to(".img-left-primary-2", { x: -innerWidth / 2.8, scale: 1 }, "<")
