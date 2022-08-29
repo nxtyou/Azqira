@@ -20,18 +20,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/tailwind.min.css" />
-    <style>
-        .rotating-bullet.active svg {
-            opacity: 100%;
-        }
-
-        .rotating-bullet.active span {
-            color: black;
-        }
-        .mySwiper2 .swiper-pagination-bullet {
-            height: 32px;
-        }
-    </style>
 </head>
 
 <body class="font-aktiv text-black overflow-x-auto">
@@ -468,39 +456,6 @@
                     <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" id="blockchain">Blockchain</button>
                 </div>
             </section>
-            <script>
-                const dashboardBtn = document.getElementById("personal-dashboard")
-                const projectBtn = document.getElementById("project-overview")
-                const blockchainBtn = document.getElementById("blockchain")
-                const mockupContainer = document.querySelector("[data-image]")
-                
-                function reset_animation() {
-                    var el2 = document.querySelectorAll('img.fadeInLeft, img.fadeInRight');
-                    el2.forEach((el)=>{
-                        el.style.animation = 'none';
-                        el.offsetHeight; /* trigger reflow */
-                        el.style.animation = null; 
-                    })
-                }
-
-                function changeImages(handler) {
-                    reset_animation()
-                    document.querySelectorAll(`[${handler}]`).forEach((e)=>{
-                        e.src = e.getAttribute(handler)
-                    })
-                    mockupContainer.setAttribute("data-image", handler)
-                }
-
-                dashboardBtn.addEventListener("click",()=>{
-                    changeImages("data-dashboard")
-                })
-                projectBtn.addEventListener("click",()=>{
-                    changeImages("data-project")
-                })
-                blockchainBtn.addEventListener("click",()=>{
-                    changeImages("data-blockchain")
-                })
-            </script>
 
             <section class="max-w-[74rem] mx-auto px-6 lg:mt-48 lg:mb-8">
                 <picture>

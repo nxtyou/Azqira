@@ -1419,3 +1419,13 @@
     list-style-type: disc;
     padding-left: 1.5rem;
 }
+.rotating-bullet.active svg {
+    opacity: 100%;
+}
+
+.rotating-bullet.active span {
+    color: black;
+}
+.mySwiper2 .swiper-pagination-bullet {
+    height: 32px;
+}

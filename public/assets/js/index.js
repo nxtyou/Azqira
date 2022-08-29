@@ -118,17 +118,48 @@ function heroChange() {
     let nextSpan = document.querySelector("#hero-text .opacity-100")
     console.log(nextSpan.offsetWidth)
     heroText.style.width = `${nextSpan.offsetWidth}px`
-    setTimeout(()=>{
+    setTimeout(() => {
         nextSpan.classList.remove("opacity-100")
         if (nextSpan.nextElementSibling.innerText != "") {
-                nextSpan.nextElementSibling.classList.add("opacity-100")
+            nextSpan.nextElementSibling.classList.add("opacity-100")
         } else {
             heroText.firstElementChild.classList.add("opacity-100")
         }
-    },3250)
-    setTimeout(()=>{
+    }, 3250)
+    setTimeout(() => {
         heroText.style.width = "0px"
-    },2500)
+    }, 2500)
 }
 heroChange()
 setInterval(heroChange, 3650)
+const dashboardBtn = document.getElementById("personal-dashboard")
+const projectBtn = document.getElementById("project-overview")
+const blockchainBtn = document.getElementById("blockchain")
+const mockupContainer = document.querySelector("[data-image]")
+
+function reset_animation() {
+    var el2 = document.querySelectorAll('img.fadeInLeft, img.fadeInRight');
+    el2.forEach((el) => {
+        el.style.animation = 'none';
+        el.offsetHeight; /* trigger reflow */
+        el.style.animation = null;
+    })
+}
+
+function changeImages(handler) {
+    reset_animation()
+    document.querySelectorAll(`[${handler}]`).forEach((e) => {
+        e.src = e.getAttribute(handler)
+    })
+    mockupContainer.setAttribute("data-image", handler)
+}
+
+dashboardBtn.addEventListener("click", () => {
+    changeImages("data-dashboard")
+})
+projectBtn.addEventListener("click", () => {
+    changeImages("data-project")
+})
+blockchainBtn.addEventListener("click", () => {
+    changeImages("data-blockchain")
+})
