@@ -9,6 +9,7 @@ module.exports = {
                 raleway: ["Raleway", "sans-serif"]
             },
             colors: {
+                "true-black": "#000",
                 white: "#FDFDFD",
                 greenish: "#27D17E",
                 blackish: "#24160B",

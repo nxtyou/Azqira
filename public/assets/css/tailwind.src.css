@@ -1407,10 +1407,15 @@
 .swiper-pagination-bullet-active circle:nth-child(2) {
     -webkit-animation: bullet-ring;
     animation: bullet-ring;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
+}
+
+#roadmap ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
 }

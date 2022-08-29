@@ -34,9 +34,9 @@
             nextEl: ".cards-2-button-next",
             prevEl: ".cards-2-button-prev",
         },
-        rewind: true,
+        loop: true,
         autoplay: {
-            delay: 3500,
+            delay: 5000,
             disableOnInteraction: false,
         },
     });
@@ -75,9 +75,21 @@
     // Scrolling animation
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.matchMedia({
-        "(min-width: 800px)": function () {
+        "(min-width: 1024px)": function () {
             const timelinePhone = gsap.timeline();
             timelinePhone
+                // .to(".phone-animation", {
+                //     // x: window.innerWidth / 2.5,
+                //     // xPercent: 50,
+                //     x: window.innerWidth/2, xPercent: -50
+                // })
+                // .to(
+                //     "#text-animation",
+                //     {
+                //         y: -window.innerHeight,
+                //     },
+                //     "<"
+                // )
                 .to("#circle-animation", { scale: 1 })
                 .to(".img-left-primary-1", { x: -innerWidth / 3.2, y: -innerHeight / 3.2, scale: 1 }, "<")
                 .to(".img-left-primary-2", { x: -innerWidth / 2.8, scale: 1 }, "<")
