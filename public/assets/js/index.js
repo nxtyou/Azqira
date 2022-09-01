@@ -57,6 +57,26 @@
         },
     });
 
+    var buttons = ["Project Overview", "Personal Dashboard", "Blockchain"]
+
+    var swiper5 = new Swiper(".mySwiper5", {
+        slidesPerView: 1,
+        clickable: true,
+        pagination: {
+            el: ".swiper-pagination-2",
+            clickable: true,
+            renderBullet: function (index, className) {
+                // return '<span class="' + className + '">' + (index + 1) + "</span>";
+
+                return `
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem] ${className}">${buttons[index]}</button>
+                `;
+            },
+            bulletClass: 'swiper-pagination-bullet-2',
+            bulletActiveClass: 'bullet-active'
+        },
+    });
+
     const breakpoint = window.matchMedia("(min-width:768px)");
 
     var swiper3;

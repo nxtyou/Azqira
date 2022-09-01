@@ -399,17 +399,8 @@
                 section[data-image="data-blockchain"] [data-button="data-blockchain"] {
                     background-color: #27D17E;
                 }
-
-                section[data-image="data-dashboard"] #feature-slider {
-                    transform: translateX(-33.3%);
-                }
-
-                section[data-image="data-project"] #feature-slider {
-                    transform: translateX(0%);
-                }
-
-                section[data-image="data-blockchain"] #feature-slider {
-                    transform: translateX(-66.6%);
+                .swiper-pagination-bullet-2.bullet-active {
+                    background-color: #27D17E;
                 }
             </style>
             <div class="hidden lg:block">
@@ -499,43 +490,40 @@
                     </div>
                 </section>
             </div>
-            <section id="feature-animation-mobile" class="py-24 relative px-6 px-0 lg:hidden"
+            <section id="feature-animation-mobile" class="py-24 relative lg:hidden"
                 data-image="data-dashboard">
                 <div
-                    class="space-y-4 text-center mb-16 top-20 left-0 w-full wow animated fadeInUp text-center mx-auto z-40">
+                    class="space-y-4 text-center mb-16 top-20 left-0 w-full wow animated fadeInUp text-center mx-auto z-40 px-[3.5rem]">
                     <h2 class="font-bold text-[2.188rem] leading-[2.496rem] tracking-[-0.02em] font-bold">
                         The future of real estate</h2>
                     <p class="text-mine-shaft leading-[1.465rem] text-base mt-4">liquid,
                         fast
                         and secure transactions through blockchain technology</p>
                 </div>
-                <div class="relative">
-                    <div class="bg-primary w-[90vw] h-[90vw] mx-auto rounded-full -z-20 bg-pampas"></div>
+                <div class="relative overflow-hidden">
+                    <div class="bg-primary h-[calc(160vw_-_7rem)] w-[calc(160vw_-_7rem)] mx-auto rounded-full -z-20 bg-pampas absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></div>
                     <div
-                        class="absolute top-1/2 z-30 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[90vw] w-[90vw] w-full overflow-hidden ">
-                        <div class="w-[300%] h-full relative transition-transform duration-200 ease-out flex"
-                            id="feature-slider">
-                            <div class="w-1/3 h-full">
-                                <img class="h-full mx-auto" src="./assets/images/mockup/phone-11.png" />
+                        class="mx-auto swiper mySwiper5">
+                        <div class="swiper-wrapper" id="feature-slider">
+                            <div class="swiper-slide px-[3.5rem]">
+                                <img class="w-full" src="./assets/images/mockup/phone-11.png" />
                             </div>
-                            <div class="w-1/3 h-full">
-                                <img class="h-full mx-auto" src="./assets/images/mockup/phone-10.png" />
+                            <div class="swiper-slide px-[3.5rem]">
+                                <img class="w-full mx-auto" src="./assets/images/mockup/phone-10.png" />
                             </div>
-                            <div class="w-1/3 h-full">
-                                <img class="h-full mx-auto" src="./assets/images/mockup/phone-12.png" />
+                            <div class="swiper-slide px-[3.5rem]">
+                                <img class="w-full mx-auto" src="./assets/images/mockup/phone-12.png" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div
+                <div class="swiper-pagination-2 mt-[2.4rem] bottom-20 left-0 w-full text-[0.625rem] leading-[2.5rem] text-white flex justify-center space-x-[0.569rem] px-4"></div>
+                <!-- <div
                     class="mt-[2.4rem] bottom-20 left-0 w-full text-[0.625rem] leading-[2.5rem] text-white flex justify-center space-x-[0.569rem] px-4">
-                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]"
-                        data-button="data-project">Project overview</button>
-                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]"
-                        data-button="data-dashboard">Personal Dashboard</button>
-                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]"
-                        data-button="data-blockchain">Blockchain</button>
-                </div>
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]">Project overview</button>
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]">Personal Dashboard</button>
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]">Blockchain</button>
+                </div> -->
             </section>
 
             <section class="max-w-[74rem] mx-auto px-6 lg:mt-48 lg:mb-8">
