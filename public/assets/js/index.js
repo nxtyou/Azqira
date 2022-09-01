@@ -132,10 +132,8 @@ function heroChange() {
 }
 heroChange()
 setInterval(heroChange, 3650)
-const dashboardBtn = document.getElementById("personal-dashboard")
-const projectBtn = document.getElementById("project-overview")
-const blockchainBtn = document.getElementById("blockchain")
-const mockupContainer = document.querySelector("[data-image]")
+const featuredBtns = document.querySelectorAll("[data-button]")
+const mockupContainer = document.querySelectorAll("[data-image]")
 
 function reset_animation() {
     var el2 = document.querySelectorAll('img.fadeInLeft, img.fadeInRight');
@@ -151,15 +149,11 @@ function changeImages(handler) {
     document.querySelectorAll(`[${handler}]`).forEach((e) => {
         e.src = e.getAttribute(handler)
     })
-    mockupContainer.setAttribute("data-image", handler)
+    mockupContainer.forEach((e)=>e.setAttribute("data-image", handler))
 }
 
-dashboardBtn.addEventListener("click", () => {
-    changeImages("data-dashboard")
-})
-projectBtn.addEventListener("click", () => {
-    changeImages("data-project")
-})
-blockchainBtn.addEventListener("click", () => {
-    changeImages("data-blockchain")
+featuredBtns.forEach((btn)=>{
+    btn.addEventListener("click", () => {
+        changeImages(btn.getAttribute("data-button"))
+    })
 })

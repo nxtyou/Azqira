@@ -388,26 +388,47 @@
                 </div>
             </section>
             <style>
-                section[data-image="data-dashboard"] #personal-dashboard {
+                section[data-image="data-dashboard"] [data-button="data-dashboard"] {
                     background-color: #27D17E;
                 }
-                section[data-image="data-project"] #project-overview {
+
+                section[data-image="data-project"] [data-button="data-project"] {
                     background-color: #27D17E;
                 }
-                section[data-image="data-blockchain"] #blockchain {
+
+                section[data-image="data-blockchain"] [data-button="data-blockchain"] {
                     background-color: #27D17E;
                 }
+
+                section[data-image="data-dashboard"] #feature-slider {
+                    transform: translateX(-33.3%);
+                }
+
+                section[data-image="data-project"] #feature-slider {
+                    transform: translateX(0%);
+                }
+
+                section[data-image="data-blockchain"] #feature-slider {
+                    transform: translateX(-66.6%);
+                }
+                
             </style>
-            <section id="feature-animation" class="py-24 md:mt-20 lg:py-0 relative lg:h-[100vh] px-6 lg:px-0" data-image="data-dashboard">
-                <div class="space-y-4 text-center lg:absolute mb-16 lg:mb-0 top-20 left-0 w-full wow animated fadeInUp text-center mx-auto z-40">
+            <div class="hidden lg:block">
+                <section id="feature-animation" class="py-24 md:mt-20 lg:py-0 relative lg:h-[100vh] px-6 lg:px-0"
+                data-image="data-dashboard">
+                <div
+                    class="space-y-4 text-center lg:absolute mb-16 lg:mb-0 top-20 left-0 w-full wow animated fadeInUp text-center mx-auto z-40">
                     <h2
                         class="font-bold md:text-[3.438rem] md:leading-[3.438rem] text-[2.188rem] leading-[2.496rem] tracking-[-0.02em] font-bold">
                         The future of real estate</h2>
-                    <p class="text-mine-shaft md:text-xl leading-[1.465rem] text-base nd:mt-[1.641rem] mt-4">liquid, fast
+                    <p class="text-mine-shaft md:text-xl leading-[1.465rem] text-base nd:mt-[1.641rem] mt-4">liquid,
+                        fast
                         and secure transactions through blockchain technology</p>
                 </div>
                 <img class="phone-animation mx-auto h-[50vh] lg:w-auto lg:absolute top-1/2 lg:-translate-y-1/2 z-30 left-1/2 lg:-translate-x-1/2"
-                    src="./assets/images/mockup/phone-10.png" data-project="./assets/images/mockup/phone-11.png" data-dashboard="./assets/images/mockup/phone-10.png" data-blockchain="./assets/images/mockup/phone-12.png"/>
+                    src="./assets/images/mockup/phone-10.png" data-project="./assets/images/mockup/phone-11.png"
+                    data-dashboard="./assets/images/mockup/phone-10.png"
+                    data-blockchain="./assets/images/mockup/phone-12.png" />
                 <div id="circle-animation"
                     class="absolute hidden lg:block left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary w-[90vw] h-[90vw] md:w-[460px] md:h-[460px] rounded-full z-20 bg-pampas lg:scale-0">
                 </div>
@@ -420,40 +441,90 @@
                     </div> -->
 
                 <div>
-                    <div class="img-left-primary-1 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
-                        <img class="animated fadeInRight"
-                        src="./assets/images/mockup/g1.png" alt="" data-project="./assets/images/mockup/h5.png" data-dashboard="./assets/images/mockup/g1.png" data-blockchain="./assets/images/mockup/g1.png" />
+                    <div
+                        class="img-left-primary-1 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
+                        <img class="animated fadeInRight" src="./assets/images/mockup/g1.png" alt=""
+                            data-project="./assets/images/mockup/h5.png" data-dashboard="./assets/images/mockup/g1.png"
+                            data-blockchain="./assets/images/mockup/g1.png" />
                     </div>
-                    
-                    <div class="img-left-primary-2 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
-                        <img class="animated fadeInRight"
-                        src="./assets/images/mockup/g2.png" alt="" data-project="./assets/images/mockup/h1.png" data-dashboard="./assets/images/mockup/g2.png" data-blockchain="./assets/images/mockup/h2.png" />
+
+                    <div
+                        class="img-left-primary-2 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
+                        <img class="animated fadeInRight" src="./assets/images/mockup/g2.png" alt=""
+                            data-project="./assets/images/mockup/h1.png" data-dashboard="./assets/images/mockup/g2.png"
+                            data-blockchain="./assets/images/mockup/h2.png" />
                     </div>
-                    <div class="img-left-primary-3 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
-                        <img class="animated fadeInRight"
-                        src="./assets/images/mockup/g3.png" alt="" data-project="./assets/images/mockup/h4.png" data-dashboard="./assets/images/mockup/g3.png" data-blockchain="./assets/images/mockup/h4.png" />
-                
+                    <div
+                        class="img-left-primary-3 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
+                        <img class="animated fadeInRight" src="./assets/images/mockup/g3.png" alt=""
+                            data-project="./assets/images/mockup/h4.png" data-dashboard="./assets/images/mockup/g3.png"
+                            data-blockchain="./assets/images/mockup/h4.png" />
+
                     </div>
                 </div>
                 <div>
-                    <div class="img-right-primary-1 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
-                        <img class="animated fadeInLeft"
-                        src="./assets/images/mockup/g6.png" alt="" data-project="./assets/images/mockup/g6.png" data-dashboard="./assets/images/mockup/g6.png" data-blockchain="./assets/images/mockup/g6.png" />
+                    <div
+                        class="img-right-primary-1 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
+                        <img class="animated fadeInLeft" src="./assets/images/mockup/g6.png" alt=""
+                            data-project="./assets/images/mockup/g6.png" data-dashboard="./assets/images/mockup/g6.png"
+                            data-blockchain="./assets/images/mockup/g6.png" />
                     </div>
-                    <div class="img-right-primary-2 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
-                        <img class="animated fadeInLeft"
-                        src="./assets/images/mockup/g5.png" alt="" data-project="./assets/images/mockup/h2.png" data-dashboard="./assets/images/mockup/g5.png" data-blockchain="./assets/images/mockup/h1.png" />
+                    <div
+                        class="img-right-primary-2 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
+                        <img class="animated fadeInLeft" src="./assets/images/mockup/g5.png" alt=""
+                            data-project="./assets/images/mockup/h2.png" data-dashboard="./assets/images/mockup/g5.png"
+                            data-blockchain="./assets/images/mockup/h1.png" />
                     </div>
-                    <div class="img-right-primary-3 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
-                        <img class="animated fadeInLeft"
-                        src="./assets/images/mockup/g4.png" alt="" data-project="./assets/images/mockup/h3.png" data-dashboard="./assets/images/mockup/g4.png" data-blockchain="./assets/images/mockup/h3.png" />
-                
+                    <div
+                        class="img-right-primary-3 hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-0">
+                        <img class="animated fadeInLeft" src="./assets/images/mockup/g4.png" alt=""
+                            data-project="./assets/images/mockup/h3.png" data-dashboard="./assets/images/mockup/g4.png"
+                            data-blockchain="./assets/images/mockup/h3.png" />
+
                     </div>
                 </div>
-                <div class="lg:absolute mt-[2.4rem] bottom-20 left-0 w-full md:text-[0.813rem] text-[0.625rem] leading-[2.5rem] text-white flex justify-center md:space-x-[1.155rem] space-x-[0.569rem]">
-                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" id="project-overview">Project overview</button>
-                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" id="personal-dashboard">Personal Dashboard</button>
-                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" id="blockchain">Blockchain</button>
+                <div
+                    class="lg:absolute mt-[2.4rem] bottom-20 left-0 w-full md:text-[0.813rem] text-[0.625rem] leading-[2.5rem] text-white flex justify-center md:space-x-[1.155rem] space-x-[0.569rem]">
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" data-button="data-project">Project overview</button>
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" data-button="data-dashboard">Personal Dashboard</button>
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" data-button="data-blockchain">Blockchain</button>
+                </div>
+            </section>
+            </div>
+            <section id="feature-animation-mobile" class="py-24 relative px-6 px-0 lg:hidden" data-image="data-dashboard">
+                <div
+                    class="space-y-4 text-center mb-16 top-20 left-0 w-full wow animated fadeInUp text-center mx-auto z-40">
+                    <h2
+                        class="font-bold text-[2.188rem] leading-[2.496rem] tracking-[-0.02em] font-bold">
+                        The future of real estate</h2>
+                    <p class="text-mine-shaft leading-[1.465rem] text-base mt-4">liquid,
+                        fast
+                        and secure transactions through blockchain technology</p>
+                </div>
+                <div class="relative">
+                    <div class="bg-primary w-[90vw] h-[90vw] mx-auto rounded-full -z-20 bg-pampas"></div>
+                    <div class="absolute top-1/2 z-30 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[90vw] w-[90vw] w-full overflow-hidden ">
+                        <div class="w-[300%] h-full relative transition-transform duration-200 ease-out flex" id="feature-slider">
+                            <div class="w-1/3 h-full">
+                                <img class="h-full mx-auto"
+                                    src="./assets/images/mockup/phone-10.png"/>
+                            </div>
+                            <div class="w-1/3 h-full">
+                                <img class="h-full mx-auto"
+                                    src="./assets/images/mockup/phone-10.png"/>
+                            </div>
+                            <div class="w-1/3 h-full">
+                                <img class="h-full mx-auto"
+                                    src="./assets/images/mockup/phone-10.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="mt-[2.4rem] bottom-20 left-0 w-full text-[0.625rem] leading-[2.5rem] text-white flex justify-center space-x-[0.569rem] px-4">
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" data-button="data-project">Project overview</button>
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" data-button="data-dashboard">Personal Dashboard</button>
+                    <button class="text-center w-[9.5rem] bg-mine-shaft rounded-[1.25rem]" data-button="data-blockchain">Blockchain</button>
                 </div>
             </section>
 
@@ -471,7 +542,8 @@
                 <p class="text-mine-shaft md:text-xl leading-[1.465rem] text-base nd:mt-[1.641rem] mt-4">The roadmap
                     shows how we started, where we are right now and what we intend to do in the future.</p>
             </div>
-            <section class="md:pt-16 max-w-[74rem] mx-auto px-6 flex flex-col md:flex-row space-y-8 md:space-y-0" id="roadmap">
+            <section class="md:pt-16 max-w-[74rem] mx-auto px-6 flex flex-col md:flex-row space-y-8 md:space-y-0"
+                id="roadmap">
                 <div class="md:w-1/2 flex flex-col justify-between">
                     <div class="space-y-4 wow animated fadeInUp">
                         <h2 class="hidden md:block text-medium text-4xl text-center md:text-left">Our roadmap.</h2>
@@ -556,17 +628,19 @@
                 <div
                     class="w-full py-[5.5rem] px-8 md:pl-12 lg:pl-16 bg-athens-gray relative rounded-3xl md:rounded-[3rem]">
                     <div class="md:px-8 md:max-w-[39rem] relative z-10 wow animated fadeInLeft">
-                        <h2 class="font-bold lg:leading-[3.438rem] text-4xl leading-9 lg:text-[3.438rem]">Realise the freedom to
+                        <h2 class="font-bold lg:leading-[3.438rem] text-4xl leading-9 lg:text-[3.438rem]">Realise the
+                            freedom to
                             your own potential
                         </h2>
-                        <p class="mt-4 text-trout lg:text-xl text-base">We believe that everyone should have the opportunity to reach
+                        <p class="mt-4 text-trout lg:text-xl text-base">We believe that everyone should have the
+                            opportunity to reach
                             their full potential and own your piece of paradise.</p>
                         <a href="/"
                             class="mt-12 block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-20 py-4 w-full relative z-10">Get
                             started now</a>
                     </div>
-                    <img class="md:w-72 lg:w-auto md:absolute right-0 bottom-0 mt-16 md:mt-0 mx-auto wow animated fadeInRight"
-                        src="./assets/images/phone-9.png" alt="" width="363" height="643" />
+                    <img class="md:w-72 lg:w-96 md:absolute right-12 bottom-6 mt-16 md:mt-0 mx-auto wow animated fadeInRight"
+                        src="./assets/images/phone-12.png" alt="" />
                 </div>
                 <div class="flex space-y-4 md:space-y-0 md:space-x-4 flex-col md:flex-row">
                     <div class="md:w-1/2 space-y-4 flex flex-col">
@@ -628,107 +702,44 @@
                 </div>
             </section>
             <section class="lg:py-40 py-20 px-6 max-w-7xl mx-auto">
-                <div class="flex lg:flex-row flex-col lg:pl-28 xl:pl-36 text-true-black wow animated fadeInUp">
-                    <h1
-                        class="lg:text-[2.5rem] lg:leading-[2.93rem] text-2xl leading-[1.563rem] font-bold tracking-[-0.02em] lg:max-w-sm mr-12">
-                        Buy and sell real estate in a matter of minutes with a secure system and no entrance barriere.
-                    </h1>
-                    <div class="grid grid-cols-[1fr] lg:grid-cols-[1fr_1fr] gap-12 lg:mt-0 mt-[3.5rem]">
-                        <div class="flex">
-                            <div class="w-8">
-                                <svg width="32px" height="32px" viewBox="0 0 32 33" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9 19.9453V15.9453C9 15.3453 8.6 14.9453 8 14.9453H1C0.4 14.9453 0 15.3453 0 15.9453V19.9453C0 20.5453 0.4 20.9453 1 20.9453H8C8.6 20.9453 9 20.5453 9 19.9453Z"
-                                        fill="#27D17E" />
-                                    <path
-                                        d="M31 14.9453H24C23.4 14.9453 23 15.3453 23 15.9453V19.9453C23 20.5453 23.4 20.9453 24 20.9453H31C31.6 20.9453 32 20.5453 32 19.9453V15.9453C32 15.3453 31.6 14.9453 31 14.9453Z"
-                                        fill="#27D17E" />
-                                    <path
-                                        d="M12 14.9453C11.4 14.9453 11 15.3453 11 15.9453V19.9453C11 20.5453 11.4 20.9453 12 20.9453H20C20.6 20.9453 21 20.5453 21 19.9453V15.9453C21 15.3453 20.6 14.9453 20 14.9453H12Z"
-                                        fill="#27D17E" />
-                                    <path
-                                        d="M6 12.9453H14C14.6 12.9453 15 12.5453 15 11.9453V7.94531C15 7.34531 14.6 6.94531 14 6.94531H6C5.4 6.94531 5 7.34531 5 7.94531V11.9453C5 12.5453 5.4 12.9453 6 12.9453Z"
-                                        fill="#27D17E" />
-                                    <path
-                                        d="M18 12.9453H26C26.6 12.9453 27 12.5453 27 11.9453V7.94531C27 7.34531 26.6 6.94531 26 6.94531H18C17.4 6.94531 17 7.34531 17 7.94531V11.9453C17 12.5453 17.4 12.9453 18 12.9453Z"
-                                        fill="#27D17E" />
-                                    <path
-                                        d="M14 22.9453H6C5.4 22.9453 5 23.3453 5 23.9453V27.9453C5 28.5453 5.4 28.9453 6 28.9453H14C14.6 28.9453 15 28.5453 15 27.9453V23.9453C15 23.3453 14.6 22.9453 14 22.9453Z"
-                                        fill="#27D17E" />
-                                    <path
-                                        d="M26 22.9453H18C17.4 22.9453 17 23.3453 17 23.9453V27.9453C17 28.5453 17.4 28.9453 18 28.9453H26C26.6 28.9453 27 28.5453 27 27.9453V23.9453C27 23.3453 26.6 22.9453 26 22.9453Z"
-                                        fill="#27D17E" />
-                                </svg>
-                            </div>
-                            <div class="ml-[0.875rem]">
-                                <h4 class="text-[1.375rem] leading-[1.611rem] font-bold mb-4">Low Entrance Barrier</h4>
-                                <p>Starting with as little as xxx you can own your stake in luxury real estate.</p>
-                            </div>
-
+                <div
+                    class="space-y-4 px-6 lg:pb-20 pb-4 text-center wow animated fadeInUp text-center mx-auto max-w-md md:mb-0 mb-12">
+                    <h2
+                        class="font-bold md:text-[3.438rem] md:leading-[3.438rem] text-[2.188rem] leading-[2.496rem] tracking-[-0.02em] font-bold">
+                        Our Benefits</h2>
+                    <p class="text-mine-shaft md:text-xl leading-[1.465rem] text-base nd:mt-[1.641rem] mt-4">Buy and
+                        sell real estate in a matter of minutes with a secure system and no entrance barriere.</p>
+                </div>
+                <div class="md:grid lg:grid-cols-[1fr_1fr_1fr_1fr] md:grid-cols-[1fr_1fr] gap-3 wow animated fadeInUp md:space-y-0 space-y-10">
+                    <div class="md:bg-athens-gray rounded-[1.25rem] md:text-center md:px-10 md:pt-[1.884rem] md:pb-[3.036rem]">
+                        <div class="md:pl-0 pl-[2.688rem] relative">
+                            <img src="assets/images/door_1f6aa 1.png" alt class="mx-auto mb-[2.404rem] md:w-auto md:h-auto md:static absolute top-0 left-0" width="25.61px" height="31px">
+                            <h3 class="md:text-[2.438rem] md:leading-[2.199rem] text-[1.375rem] leading-[1.611rem] font-bold md:mb-8 mb-4">Low Entrance</h3>
+                            <p class="md:text-[#AEAEAF] md:text-lg md:leading-[1.293rem] text-base leading-[1.125rem]">Start investing with 100€
+                                No paperwork or loans from the bank.</p>
                         </div>
-                        <div class="flex">
-                            <div class="w-8">
-                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.6567 8.09554H20.3909C19.3452 5.48119 16.818 3.73828 13.9422 3.73828C11.0664 3.73828 8.53916 5.48119 7.49341 8.09554H5.22764C3.74617 8.09554 2.61328 9.22843 2.61328 10.7099V11.2328C2.61328 14.2829 5.14049 16.8101 8.19058 16.8101H19.7809C22.831 16.8101 25.3582 14.2829 25.3582 11.2328V10.7099C25.271 9.22843 24.1382 8.09554 22.6567 8.09554ZM13.9422 5.48119C15.8594 5.48119 17.5151 6.52693 18.4737 8.09554H9.41061C10.3692 6.52693 12.025 5.48119 13.9422 5.48119Z"
-                                        fill="#27D17E" />
-                                    <path
-                                        d="M20.0423 18.5546V20.2975C20.0423 20.8203 19.6937 21.1689 19.1709 21.1689C18.648 21.1689 18.2994 20.8203 18.2994 20.2975V18.5546H9.5849V20.2975C9.5849 20.8203 9.23632 21.1689 8.71345 21.1689C8.19058 21.1689 7.84199 20.8203 7.84199 20.2975V18.5546C5.75051 18.4674 3.92046 17.5088 2.61328 16.0273V22.0404C2.61328 23.5218 3.74617 24.6547 5.22764 24.6547H22.6567C24.1382 24.6547 25.271 23.5218 25.271 22.0404V16.0273C23.9639 17.5088 22.1338 18.4674 20.0423 18.5546Z"
-                                        fill="#27D17E" />
-                                </svg>
-                            </div>
-                            <div class="ml-[0.875rem]">
-                                <h4 class="text-[1.375rem] leading-[1.611rem] font-bold mb-4">Portfolio Diversification
-                                </h4>
-                                <p>You pick and choose between projects which allows you to lower the risk and multiply
-                                    income streams</p>
-                            </div>
-
+                    </div> 
+                    <div class="md:bg-athens-gray rounded-[1.25rem] md:text-center md:px-10 md:pt-[1.884rem] md:pb-[3.036rem]">
+                        <div class="md:pl-0 pl-[2.688rem] relative">
+                            <img src="assets/images/chain.png" alt class="mx-auto mb-[2.404rem] md:w-auto md:h-auto md:static absolute top-0 left-0" width="27.89px" height="27.89px">
+                            <h3 class="md:text-[2.438rem] md:leading-[2.199rem] text-[1.375rem] leading-[1.611rem] font-bold md:mb-8 mb-4">Fractional Ownership</h3>
+                            <p class="md:text-[#AEAEAF] md:text-lg md:leading-[1.293rem] text-base leading-[1.125rem]">Share risk & reward. Rather a small part from a huge pie than a large part from a small pie</p>
                         </div>
-                        <div class="flex">
-                            <div class="w-8">
-                                <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_600_1167)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7.59196 26.7645C8.98952 26.7645 10.1259 25.7481 10.1259 24.4964C10.1259 24.0494 9.98005 23.633 9.7283 23.28H9.79653C8.68366 22.0636 8.8013 21.0684 9.98005 20.7202H13.8786C14.3186 20.7202 14.6786 20.3602 14.6786 19.9202V16.4593C14.9515 14.0971 15.9609 14.7982 17.149 15.5299C20.0194 17.2969 21.9276 13.1112 19.6077 11.6784C17.7866 10.5537 16.9984 12.4877 15.6644 12.2878C15.1491 12.2101 14.7915 11.6525 14.6786 10.8055V7.38452C14.6786 6.94454 14.3186 6.58457 13.8786 6.58457H10.4647C8.84835 6.37987 8.54249 5.29288 9.79418 3.9259H9.72595C9.9777 3.57298 10.1236 3.15654 10.1236 2.70951C10.1259 1.45782 8.99187 0.441406 7.59196 0.441406C6.19439 0.441406 5.06034 1.45782 5.06034 2.70951C5.06034 3.15654 5.20622 3.57298 5.45797 3.9259H5.4415C6.69319 5.29288 6.38968 6.38223 4.77095 6.58457H1.34292C0.902947 6.58457 0.542969 6.94454 0.542969 7.38452V10.9514C0.799424 12.4195 1.85818 12.6595 3.17575 11.4525V11.469C3.52867 11.2172 3.94512 11.0714 4.39215 11.0714C5.64384 11.0714 6.66025 12.2054 6.66025 13.603C6.66025 15.0005 5.64384 16.1346 4.39215 16.1346C3.94512 16.1346 3.52867 15.9887 3.17575 15.737V15.8052C1.85818 14.5982 0.799424 14.8405 0.542969 16.3087V19.9226C0.542969 20.3626 0.902947 20.7225 1.34292 20.7225H5.25563C6.43438 21.0708 6.55437 22.066 5.43915 23.2824H5.45561C5.20622 23.6353 5.05799 24.0518 5.05799 24.4988C5.06034 25.7505 6.19439 26.7669 7.59196 26.7645ZM22.4052 26.8939H22.4005C21.0029 26.8939 19.8665 25.8775 19.8665 24.6258C19.8665 24.1788 20.0124 23.7624 20.2641 23.4094H20.2477C21.3605 22.193 21.2429 21.1978 20.0641 20.8496H16.1514C15.7115 20.8496 15.3515 20.4896 15.3515 20.0496V16.4428C15.5397 15.8969 15.7797 15.704 16.062 15.697C16.1914 15.6946 16.3279 15.7299 16.4738 15.7911C16.8832 15.9605 17.3631 16.3157 17.8855 16.5181C19.8995 17.2945 21.6288 15.3346 21.5135 13.3206C21.4876 12.8712 21.3064 12.4289 21.0382 12.0195C20.01 10.4479 18.4878 10.2996 17.0196 11.1961C16.2714 11.6549 15.6762 12.0007 15.335 10.9208L15.3538 7.51157C15.3562 7.0716 15.7138 6.71162 16.1538 6.71162H19.5795C21.1958 6.50692 21.5017 5.41993 20.25 4.05295H20.2665C20.0147 3.70003 19.8689 3.28359 19.8689 2.83656C19.8689 1.58487 21.0029 0.568457 22.4028 0.568457H22.4075C23.8051 0.568457 24.9415 1.58487 24.9415 2.83656C24.9415 3.28359 24.7956 3.70003 24.5439 4.05295H24.5603C23.3087 5.41993 23.6122 6.50928 25.2309 6.71162H28.6566C29.0965 6.71162 29.4565 7.0716 29.4565 7.51157V11.0784C29.2001 12.5466 28.1413 12.7865 26.8237 11.5796V11.596C26.4708 11.3443 26.0544 11.1984 25.6073 11.1984C24.3557 11.1984 23.3392 12.3325 23.3392 13.73C23.3392 15.1276 24.3557 16.264 25.6073 16.264C26.0544 16.264 26.4708 16.1181 26.8237 15.8664V15.9346C28.1437 14.7276 29.2001 14.9699 29.4565 16.4381V20.0449C29.4565 20.4849 29.0965 20.8449 28.6566 20.8449H24.7439C23.5651 21.1931 23.4475 22.1883 24.5603 23.4047H24.5415C24.7933 23.7577 24.9391 24.1741 24.9391 24.6211C24.9368 25.8775 23.8027 26.8939 22.4052 26.8939Z"
-                                            fill="#27D17E" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_600_1167">
-                                            <rect width="28.9112" height="26.4525" fill="white"
-                                                transform="translate(0.542969 0.441406)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="ml-[0.875rem]">
-                                <h4 class="text-[1.375rem] leading-[1.611rem] font-bold mb-4">Fractional Investing</h4>
-                                <p>using blockchain technology to break down large real estate projects into smaller
-                                    pieces, basically anyone can have the chance to invest.</p>
-                            </div>
-
+                    </div> 
+                    <div class="md:bg-athens-gray rounded-[1.25rem] md:text-center md:px-10 md:pt-[1.884rem] md:pb-[3.036rem]">
+                        <div class="md:pl-0 pl-[2.688rem] relative">
+                            <img src="assets/images/lock.png" alt class="mx-auto mb-[2.404rem] md:w-auto md:h-auto md:static absolute top-0 left-0" width="28.77px" height="34.82px">
+                            <h3 class="md:text-[2.438rem] md:leading-[2.199rem] text-[1.375rem] leading-[1.611rem] font-bold md:mb-8 mb-4">Liquid, fast, secure</h3>
+                            <p class="md:text-[#AEAEAF] md:text-lg md:leading-[1.293rem] text-base leading-[1.125rem]">Blockchain technology brings flexibility to an illiquid asset class</p>
                         </div>
-                        <div class="flex">
-                            <div class="w-8">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27"
-                                    viewBox="0 0 96.108 122.88" enable-background="new 0 0 96.108 122.88"
-                                    xml:space="preserve">
-                                    <g>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#27D17E"
-                                            d="M2.892,56.036h8.959v-1.075V37.117c0-10.205,4.177-19.484,10.898-26.207v-0.009 C29.473,4.177,38.754,0,48.966,0C59.17,0,68.449,4.177,75.173,10.901l0.01,0.009c6.721,6.723,10.898,16.002,10.898,26.207v17.844 v1.075h7.136c1.59,0,2.892,1.302,2.892,2.891v61.062c0,1.589-1.302,2.891-2.892,2.891H2.892c-1.59,0-2.892-1.302-2.892-2.891 V58.927C0,57.338,1.302,56.036,2.892,56.036L2.892,56.036z M26.271,56.036h45.387v-1.075V36.911c0-6.24-2.554-11.917-6.662-16.03 l-0.005,0.004c-4.111-4.114-9.787-6.669-16.025-6.669c-6.241,0-11.917,2.554-16.033,6.665c-4.109,4.113-6.662,9.79-6.662,16.03 v18.051V56.036L26.271,56.036z M49.149,89.448l4.581,21.139l-12.557,0.053l3.685-21.423c-3.431-1.1-5.918-4.315-5.918-8.111 c0-4.701,3.81-8.511,8.513-8.511c4.698,0,8.511,3.81,8.511,8.511C55.964,85.226,53.036,88.663,49.149,89.448L49.149,89.448z" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="ml-[0.875rem]">
-                                <h4 class="text-[1.375rem] leading-[1.611rem] font-bold mb-4">Liquid, Fast, secure</h4>
-                                <p>secured by blockchain technology. Fast access & liquidity</p>
-                            </div>
+                    </div> 
+                    <div class="md:bg-athens-gray rounded-[1.25rem] md:text-center md:px-10 md:pt-[1.884rem] md:pb-[3.036rem]">
+                        <div class="md:pl-0 pl-[2.688rem] relative">
+                            <img src="assets/images/suitcase.png" alt class="mx-auto mb-[2.404rem] md:w-auto md:h-auto md:static absolute top-0 left-0" width="27px" height="27px">
+                            <h3 class="md:text-[2.438rem] md:leading-[2.199rem] text-[1.375rem] leading-[1.611rem] font-bold md:mb-8 mb-4">Portfolio diversity</h3>
+                            <p class="md:text-[#AEAEAF] md:text-lg md:leading-[1.293rem] text-base leading-[1.125rem]">Build a global portfolio that minimises the risk and multiplies income streams</p>
                         </div>
-                    </div>
+                    </div>                     
                 </div>
                 <div
                     class="w-full py-[5.5rem] px-8 md:pl-12 lg:pl-16 bg-athens-gray relative rounded-3xl md:rounded-[3rem] lg:mt-40 mt-20">
@@ -742,12 +753,13 @@
                             class="mt-12 block sm:w-fit bg-black text-white rounded-full whitespace-nowrap text-center px-20 py-4 w-full relative z-10">Get
                             started now</a>
                     </div>
-                    <img class="md:w-72 lg:w-auto md:absolute left-[5%] bottom-0 lg:-bottom-[18%] mt-16 md:mt-0 mx-auto wow animated fadeInLeft"
-                        src="./assets/images/phone-1.png" alt="" width="363" height="643" />
+                    <img class="md:w-72 lg:w-auto md:absolute left-[5%] bottom-0 lg:-bottom-[14%] mt-16 md:mt-0 mx-auto wow animated fadeInLeft"
+                        src="./assets/images/phone-13.png" alt="" width="363" height="643" />
                 </div>
             </section>
             <section class="lg:pb-20 px-6 max-w-7xl mx-auto">
-                <div class="space-y-4 px-6 lg:pb-20 pb-4 text-center wow animated fadeInUp text-center mx-auto max-w-md">
+                <div
+                    class="space-y-4 px-6 lg:pb-20 pb-4 text-center wow animated fadeInUp text-center mx-auto max-w-md">
                     <h2
                         class="font-bold md:text-[3.438rem] md:leading-[3.438rem] text-[2.188rem] leading-[2.496rem] tracking-[-0.02em] font-bold">
                         Meet the Crew</h2>
@@ -755,34 +767,46 @@
                         dolor sit amet, consectetur adipiscing elit. Sodales a, tristique</p>
                 </div>
                 <div
-                    class="grid grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr_1fr_1fr] gap-x-[0.349rem] md:gap-x-[0.625rem] gap-y-[1.875rem] mt-8 wow animated fadeInUp">
+                    class="grid grid-cols-[1fr_1fr] gap-x-[0.349rem] md:gap-x-[12%] gap-y-[1.875rem] max-w-[52.813rem] mt-8 wow animated fadeInUp mx-auto">
                     <div class="text-center">
                         <img src="assets/images/crew-1.jpg" alt class="w-full rounded-[1.25rem]">
-                        <h4 class="lg:text-2xl text-base mb-3 mt-6 font-bold text-tundora">Tom Teichmann</h4>
-                        <p class="lg:text-base lg:leading-[1.438rem] text-xs leading-[0.813rem] text-silver-chalice">
-                            Managing Director, co-founder and fearless leader. </p>
+                        <div class=" px-8">
+                            <h6 class="uppercase text-greenish md:text-xl md:leading-[1.833rem] mt-6">Founder</h6>
+                            <h4 class="md:text-3xl text-base my-2 font-bold text-tundora">Tom Teichmann</h4>
+                            <p class="md:text-xl md:leading-[1.833rem] text-xs leading-[0.813rem] text-silver-chalice">
+                                Managing Director, co-founder and fearless leader. </p>
+                        </div>
                     </div>
                     <div class="text-center">
                         <img src="assets/images/crew-2.jpg" alt class="w-full rounded-[1.25rem]">
-                        <h4 class="lg:text-2xl text-base mb-3 mt-6 font-bold text-tundora">Nawid Habib</h4>
-                        <p class="lg:text-base lg:leading-[1.438rem] text-xs leading-[0.813rem] text-silver-chalice">
-                            Chairman of the Board, co-founder and voice of reason.</p>
+                        <div class=" px-8">
+                            <h6 class="uppercase text-greenish md:text-xl md:leading-[1.833rem] mt-6">Founder</h6>
+                            <h4 class="md:text-3xl text-base my-2 font-bold text-tundora">Nawid Habib</h4>
+                            <p class="md:text-xl md:leading-[1.833rem] text-xs leading-[0.813rem] text-silver-chalice">
+                                Chairman of the Board, co-founder and voice of reason.</p>
+                        </div>
                     </div>
                     <div class="text-center">
                         <img src="assets/images/crew-3.jpg" alt class="w-full rounded-[1.25rem]">
-                        <h4 class="lg:text-2xl text-base mb-3 mt-6 font-bold text-tundora">Ludwig Bouldoukian</h4>
-                        <p class="lg:text-base lg:leading-[1.438rem] text-xs leading-[0.813rem] text-silver-chalice">
-                            International hospitality expert</p>
+                        <div class=" px-8">
+                            <h6 class="uppercase text-greenish md:text-xl md:leading-[1.833rem] mt-6">Advisor</h6>
+                            <h4 class="md:text-3xl text-base my-2 font-bold text-tundora">Gil Antolin</h4>
+                            <p class="md:text-xl md:leading-[1.833rem] text-xs leading-[0.813rem] text-silver-chalice">
+                                Marketing Executive and Social Media Expert.</p>
+                        </div>
                     </div>
                     <div class="text-center">
                         <img src="assets/images/crew-4.jpg" alt class="w-full rounded-[1.25rem]">
-                        <h4 class="lg:text-2xl text-base mb-3 mt-6 font-bold text-tundora">Gil Antolin</h4>
-                        <p class="lg:text-base lg:leading-[1.438rem] text-xs leading-[0.813rem] text-silver-chalice">
-                            Marketing Executive and Social Media Expert.</p>
+                        <div class=" px-8">
+                            <h6 class="uppercase text-greenish md:text-xl md:leading-[1.833rem] mt-6">Advisor</h6>
+                            <h4 class="md:text-3xl text-base my-2 font-bold text-tundora">Ludwig Bouldoukian</h4>
+                            <p class="md:text-xl md:leading-[1.833rem] text-xs leading-[0.813rem] text-silver-chalice">
+                                International hospitality expert</p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="py-20 px-6 max-w-7xl mx-auto">
+            <section class="py-20 px-6">
                 <div class="space-y-4 px-6 pb-20 text-center wow animated fadeInUp text-center mx-auto max-w-4xl">
                     <h2
                         class="font-bold md:text-[3.438rem] md:leading-[3.438rem] text-[2.188rem] leading-[2.496rem] tracking-[-0.02em] font-bold">
@@ -791,11 +815,24 @@
                         interested in selling their properties to Azqira and our Community. People love our services and
                         everyone benefits from it.</p>
                 </div>
-                <div class="flex lg:flex-row flex-col justify-between items-center lg:space-y-0 space-y-[5.5rem] lg:mt-6 wow animated fadeInUp">
-                    <img src="assets/images/partner-2.png" alt class="lg:order-2">
-                    <img src="assets/images/partner-1.png" alt class="lg:order-1">
-                    <img src="assets/images/partner-3.png" alt class="lg:order-3">
-                    <img src="assets/images/partner-4.png" alt class="lg:order-4">
+                <div
+                    class="flex lg:flex-row flex-col justify-between items-center lg:space-y-0 space-y-[5.5rem] lg:mt-6 wow animated fadeInUp">
+                    <div
+                        class="bg-[url(../images/banner.jpg)] bg-cover bg-center flex items-center justify-center rounded-[1.25rem] w-[22.375rem] h-[12.5rem]">
+                        <img src="assets/images/partner-2.png" alt class="">
+                    </div>
+                    <div
+                        class="bg-[url(../images/banner.jpg)] bg-cover bg-center flex items-center justify-center rounded-[1.25rem] w-[22.375rem] h-[12.5rem]">
+                        <img src="assets/images/partner-1.png" alt class="">
+                    </div>
+                    <div
+                        class="bg-[url(../images/banner.jpg)] bg-cover bg-center flex items-center justify-center rounded-[1.25rem] w-[22.375rem] h-[12.5rem]">
+                        <img src="assets/images/partner-3.png" alt class="">
+                    </div>
+                    <div
+                        class="bg-[url(../images/banner.jpg)] bg-cover bg-center flex items-center justify-center rounded-[1.25rem] w-[22.375rem] h-[12.5rem]">
+                        <img src="assets/images/partner-4.png" alt class="">
+                    </div>
                 </div>
             </section>
         </main>
@@ -827,7 +864,7 @@
                             fill="white"></path>
                     </svg>
                 </a>
-                
+
                 <ul class="flex space-x-4 text-white">
                     <li><a class="hover:underline text-sm md:text-base" href="/">Legal Disclosure</a></li>
                     <li><a class="hover:underline text-sm md:text-base" href="/">Privacy Policy</a></li>
