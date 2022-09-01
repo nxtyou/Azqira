@@ -1,17 +1,6 @@
 (function () {
     new WOW().init();
 
-    var swiper1 = new Swiper(".mySwiper1", {
-        effect: "cards",
-        grabCursor: true,
-        navigation: {
-            nextEl: ".cards-button-next",
-            prevEl: ".cards-button-prev",
-        },
-        initialSlide: 2,
-        loop: true,
-    });
-
     var swiper2 = new Swiper(".mySwiper2", {
         pagination: {
             el: ".swiper-pagination",
@@ -38,6 +27,33 @@
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
+        },
+    });
+
+    var swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 1,
+        spaceBetween: 32,
+        clickable: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        },
+        navigation: {
+            nextEl: ".partner-button-next",
+            prevEl: ".partner-button-prev",
+        },
+    });
+
+    var swiper4 = new Swiper(".mySwiper4", {
+        slidesPerView: 3,
+        clickable: true,
+        navigation: {
+            nextEl: ".steps-button-next",
+            prevEl: ".steps-button-prev",
         },
     });
 
