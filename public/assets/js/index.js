@@ -111,21 +111,21 @@
     // Scrolling animation
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.matchMedia({
+        "(max-width: 1023px)": function() {
+            const timelineGoals = gsap.timeline({
+                scrollTrigger: {
+                    trigger:".goal-trigger",
+                    endTrigger: ".goal-endtrigger",
+                    start: "top 30%", // when the top of the trigger hits the top of the viewport
+                    end: "bottom 30%", // end after scrolling 500px beyond the start
+                    scrub: true,
+                }
+            });
+            timelineGoals.to(".goal-line", { height: "100%", ease: "linear"})
+        },
         "(min-width: 1024px)": function () {
             const timelinePhone = gsap.timeline();
             timelinePhone
-                // .to(".phone-animation", {
-                //     // x: window.innerWidth / 2.5,
-                //     // xPercent: 50,
-                //     x: window.innerWidth/2, xPercent: -50
-                // })
-                // .to(
-                //     "#text-animation",
-                //     {
-                //         y: -window.innerHeight,
-                //     },
-                //     "<"
-                // )
                 .to("#circle-animation", { scale: 1 })
                 .to(".img-left-primary-1", { x: -innerWidth / 3.2, y: -innerHeight / 3.2, scale: 1 }, "<")
                 .to(".img-left-primary-2", { x: -innerWidth / 2.8, scale: 1 }, "<")
