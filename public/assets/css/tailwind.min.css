@@ -4048,6 +4048,10 @@ video {
   background-color: rgba(32,32,40,0.2);
 }
 
+.bg-\[rgba\(32\2c 32\2c 40\2c 0\.4\)\] {
+  background-color: rgba(32,32,40,0.4);
+}
+
 .bg-hero {
   background-image: url(../images/hero-bg.jpg);
 }
