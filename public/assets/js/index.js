@@ -77,6 +77,20 @@
         },
     });
 
+    var swiper6 = new Swiper(".mySwiper6", {
+        slidesPerView: 1,
+        clickable: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+        },
+        navigation: {
+            nextEl: ".video-button-next",
+            prevEl: ".video-button-prev",
+        },
+    });
+
     const breakpoint = window.matchMedia("(min-width:768px)");
 
     var swiper3;
@@ -152,7 +166,6 @@
 const heroText = document.getElementById("hero-text")
 function heroChange() {
     let nextSpan = document.querySelector("#hero-text .opacity-100")
-    console.log(nextSpan.offsetWidth)
     heroText.style.width = `${nextSpan.offsetWidth}px`
     setTimeout(() => {
         nextSpan.classList.remove("opacity-100")
@@ -193,3 +206,20 @@ featuredBtns.forEach((btn)=>{
         changeImages(btn.getAttribute("data-button"))
     })
 })
+
+function handleModalOpener() {
+
+}
+
+const modal = document.getElementById("modal")
+document.getElementById("modal-close").addEventListener("click",()=>{modal.classList.add("hidden")})
+
+const modalOpener = document.querySelectorAll("[data-modals]")
+
+modalOpener.forEach((e)=>{
+    e.addEventListener("click",()=>{
+        modal.classList.remove("hidden")
+        modal.setAttribute("data-modal",e.getAttribute("data-modals"))
+    })
+})
+
