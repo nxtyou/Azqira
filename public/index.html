@@ -23,10 +23,9 @@
 </head>
 
 <body class="font-aktiv text-black overflow-x-auto">
-    <span class="text-silver-chalice"></span>
     <div class="overflow-hidden">
         <header
-            class="flex items-center justify-between pt-[1.25rem] md:pt-6 px-6 max-w-[82.5rem] absolute top-0 left-1/2 -translate-x-1/2 w-full text-white">
+            class="flex items-center justify-between pt-[1.25rem] md:pt-6 px-6 max-w-[82.5rem] absolute z-10 top-0 left-1/2 -translate-x-1/2 w-full text-white">
             <img src="./assets/images/logo.svg" alt="logo" width="42px" height="32px" class="md:block hidden">
 
             <svg width="160" height="33" viewBox="0 0 160 33" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +77,10 @@
 
         <main>
             <section
-                class="px-6 pt-40 md:pt-56 pb-10 bg-hero bg-cover bg-center text-center text-white flex flex-col items-center">
+                class="px-6 pt-40 md:pt-56 pb-10 text-center text-white flex flex-col items-center relative">
+                <video playsinline muted autoplay loop width="100%" poster="assets/images/hero-bg.jpg" class="h-full object-cover absolute left-0 top-0 -z-10">
+                    <source src="" type="video/mp4">
+                </video>
                 <img src="./assets/images/logo.svg" alt="logo" width="85.31px" height="65px">
                 <h1
                     class="mt-6 md:text-[3.438rem] tracking-[-0.02em] text-[2.813rem] leading-[3.125rem] font-medium wow animated fadeInUp">
@@ -121,7 +123,13 @@
                             fractions - and make investing <span
                                 class="bg-greenish text-[#050505] px-1 rounded">accessible for everyone!</span></h2>
                     </header>
-                    <img src="./assets/images/image-1.jpg" alt class="w-full md:rounded-3xl rounded-md md:mt-28 mt-24">
+                    <div class="w-full md:rounded-3xl rounded-md md:mt-28 mt-24">
+                        
+                        <video playsinline muted autoplay loop width="100%" poster="assets/images/image-1.jpg" class="md:rounded-3xl rounded-md">
+                            <source src="" type="video/mp4">
+                        </video>
+                        
+                    </div>
                 </div>
             </section>
 
