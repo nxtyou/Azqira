@@ -3585,6 +3585,10 @@ video {
   height: 37rem;
 }
 
+.h-\[184px\] {
+  height: 184px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -4641,6 +4645,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-\[228px\] {
+    height: 228px;
+  }
+
   .sm\:w-fit {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -4778,6 +4786,10 @@ video {
 
   .md\:h-auto {
     height: auto;
+  }
+
+  .md\:h-\[228px\] {
+    height: 228px;
   }
 
   .md\:w-\[550px\] {
