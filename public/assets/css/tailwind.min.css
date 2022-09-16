@@ -3577,16 +3577,16 @@ video {
   height: 20rem;
 }
 
+.h-\[184px\] {
+  height: 184px;
+}
+
 .h-3 {
   height: 0.75rem;
 }
 
 .h-\[37rem\] {
   height: 37rem;
-}
-
-.h-\[184px\] {
-  height: 184px;
 }
 
 .w-full {
@@ -3951,12 +3951,12 @@ video {
   border-bottom-left-radius: 1.5rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-greenish {
@@ -4025,6 +4025,10 @@ video {
   background-color: rgb(248 249 250 / var(--tw-bg-opacity));
 }
 
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.6\)\] {
+  background-color: rgba(0,0,0,0.6);
+}
+
 .bg-cold-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 24 / var(--tw-bg-opacity));
@@ -4033,6 +4037,10 @@ video {
 .bg-\[\#F2EFE8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 239 232 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
+  background-color: rgba(0,0,0,0.3);
 }
 
 .bg-\[url\(\'\.\.\/images\/snake-line\.png\'\)\] {
@@ -4673,16 +4681,6 @@ video {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-
-  .sm\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .sm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -4788,10 +4786,6 @@ video {
     height: auto;
   }
 
-  .md\:h-\[228px\] {
-    height: 228px;
-  }
-
   .md\:w-\[550px\] {
     width: 550px;
   }
@@ -4800,8 +4794,8 @@ video {
     width: 24rem;
   }
 
-  .md\:w-auto {
-    width: auto;
+  .md\:w-\[263px\] {
+    width: 263px;
   }
 
   .md\:w-\[460px\] {
@@ -4816,12 +4810,12 @@ video {
     width: 50%;
   }
 
-  .md\:w-\[70\%\] {
-    width: 70%;
+  .md\:w-auto {
+    width: auto;
   }
 
-  .md\:w-\[263px\] {
-    width: 263px;
+  .md\:w-\[70\%\] {
+    width: 70%;
   }
 
   .md\:max-w-\[50\%\] {
