@@ -125,17 +125,17 @@
     // Scrolling animation
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.matchMedia({
-        "(max-width: 1023px)": function() {
+        "(max-width: 1023px)": function () {
             const timelineGoals = gsap.timeline({
                 scrollTrigger: {
-                    trigger:".goal-trigger",
+                    trigger: ".goal-trigger",
                     endTrigger: ".goal-endtrigger",
                     start: "top 30%", // when the top of the trigger hits the top of the viewport
                     end: "bottom 30%", // end after scrolling 500px beyond the start
                     scrub: true,
                 }
             });
-            timelineGoals.to(".goal-line", { height: "100%", ease: "linear"})
+            timelineGoals.to(".goal-line", { height: "100%", ease: "linear" })
         },
         "(min-width: 1024px)": function () {
             const timelinePhone = gsap.timeline();
@@ -179,10 +179,10 @@ function changeImages(handler) {
     document.querySelectorAll(`[${handler}]`).forEach((e) => {
         e.src = e.getAttribute(handler)
     })
-    mockupContainer.forEach((e)=>e.setAttribute("data-image", handler))
+    mockupContainer.forEach((e) => e.setAttribute("data-image", handler))
 }
 
-featuredBtns.forEach((btn)=>{
+featuredBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
         changeImages(btn.getAttribute("data-button"))
     })
@@ -193,14 +193,34 @@ function handleModalOpener() {
 }
 
 const modal = document.getElementById("modal")
-document.getElementById("modal-close").addEventListener("click",()=>{modal.classList.add("hidden")})
+document.getElementById("modal-close").addEventListener("click", () => { modal.classList.add("hidden") })
 
 const modalOpener = document.querySelectorAll("[data-modals]")
 
-modalOpener.forEach((e)=>{
-    e.addEventListener("click",()=>{
+modalOpener.forEach((e) => {
+    e.addEventListener("click", () => {
         modal.classList.remove("hidden")
-        modal.setAttribute("data-modal",e.getAttribute("data-modals"))
+        modal.setAttribute("data-modal", e.getAttribute("data-modals"))
     })
 })
 
+const logo = document.getElementById("loading-logo")
+const lScreen = document.getElementById("loading-screen")
+const cookieBanner = document.getElementById("cookies-eu-banner")
+
+logo.addEventListener("transitionend",()=>{
+    setTimeout(()=>{
+        lScreen.classList.add("opacity-0")
+    },1000)
+    setTimeout(()=>{
+        lScreen.classList.add("hidden")
+    },2000)
+    setTimeout(()=>{
+        cookieBanner.classList.remove("hidden")
+    },3000)
+
+})
+window.addEventListener("DOMContentLoaded", () => {    
+    logo.classList.remove("animate-spin-slow")
+    logo.firstElementChild.style.stroke = "#27D17E"
+})

@@ -40,6 +40,12 @@ module.exports = {
             },
             transitionProperty: {
                 'width': "width"
+            },
+            animation: {
+                'spin-slow': 'spin 2s linear infinite',
+            },
+            transitionDuration: {
+              '1000': '1000ms',
             }
         },
     },
