@@ -224,3 +224,11 @@ window.addEventListener("load", () => {
     logo.classList.remove("animate-spin-slow")
     logo.firstElementChild.style.stroke = "#27D17E"
 })
+
+const mockupVideos = document.querySelectorAll(".mySwpie6 video")
+
+function restartVideos() {
+    mockupVideos.forEach((v)=>v.load())
+}
+
+setInterval(restartVideos,20000)
