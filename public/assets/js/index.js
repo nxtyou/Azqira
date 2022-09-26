@@ -215,9 +215,6 @@ logo.addEventListener("transitionend",()=>{
     setTimeout(()=>{
         lScreen.classList.add("hidden")
     },2000)
-    setTimeout(()=>{
-        cookieBanner.classList.remove("hidden")
-    },3000)
 
 })
 window.addEventListener("DOMContentLoaded", () => {    
