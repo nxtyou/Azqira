@@ -84,6 +84,9 @@
             640: {
                 slidesPerView: 2,
             },
+            768: {
+                slidesPerView: 4,
+            }
         },
         navigation: {
             nextEl: ".video-button-next",
@@ -217,7 +220,7 @@ logo.addEventListener("transitionend",()=>{
     },2000)
 
 })
-window.addEventListener("DOMContentLoaded", () => {    
+window.addEventListener("load", () => {    
     logo.classList.remove("animate-spin-slow")
     logo.firstElementChild.style.stroke = "#27D17E"
 })
