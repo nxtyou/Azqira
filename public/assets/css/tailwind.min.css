@@ -5478,6 +5478,10 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .lg\:text-\[3\.438rem\] {
     font-size: 3.438rem;
   }
