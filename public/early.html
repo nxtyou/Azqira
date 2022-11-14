@@ -65,7 +65,7 @@
                 </header>
             </section>
             <section
-                class="px-6 max-w-7xl mx-auto text-[#000] py-16 flex flex-col items-center justify-between flex-grow">
+                class="px-6 max-w-[57rem] mx-auto text-[#000] pt-12 pb-[1.438rem] flex flex-col items-center justify-between flex-grow">
                 <img src="assets/images/logo-black2.png" alt="logo" width="207.59" height="42.7"
                     class="lg:block hidden">
                 <h1 class="lg:text-[4rem] text-[2.5rem] tracking-[-.02em] font-bold text-cold-gray">EARLY ACCESS</h1>
@@ -82,7 +82,8 @@
                             </div>
                             <div class="eapps-countdown-timer-item-container">
                                 <div class="eapps-countdown-timer-item">
-                                    <div class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-days">
+                                    <div
+                                        class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-days flex">
                                         <div class="eapps-countdown-timer-item-group-label" title="Days">Days</div>
                                         <div class="eapps-countdown-timer-item-group-inner">
                                             <div class="eapps-countdown-timer-item-first eapps-countdown-timer-item-days days-1"
@@ -112,7 +113,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-hours">
+                                        class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-hours flex">
                                         <div class="eapps-countdown-timer-item-group-label" title="Hours">Hours</div>
                                         <div class="eapps-countdown-timer-item-group-inner">
                                             <div class="eapps-countdown-timer-item-first eapps-countdown-timer-item-hours hours-1"
@@ -142,7 +143,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-minutes">
+                                        class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-minutes md:flex hidden">
                                         <div class="eapps-countdown-timer-item-group-label" title="Minutes">Minutes
                                         </div>
                                         <div class="eapps-countdown-timer-item-group-inner">
@@ -173,7 +174,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-seconds">
+                                        class="eapps-countdown-timer-item-group eapps-countdown-timer-item-group-seconds flex">
                                         <div class="eapps-countdown-timer-item-group-label" title="Seconds">Seconds
                                         </div>
                                         <div class="eapps-countdown-timer-item-group-inner">
@@ -383,23 +384,29 @@
                             border-radius: 2px;
                         }
 
+
                         #eapps-countdown-timer-1 .eapps-countdown-timer-item-value {
-                            font-size: 54px;
-                            line-height: 60px;
-                            padding: 8px 12px;
-                            border-radius: 8px;
+                            font-size: 30px;
+                            line-height: 36px;
+                            padding: 5px 7px;
+                            border-radius: 5px;
                         }
 
                         #eapps-countdown-timer-1 .eapps-countdown-timer-item-group {
-                            margin: 0 17px;
+                            margin: 0 9px;
                         }
 
-                        #eapps-countdown-timer-1 .eapps-countdown-timer-item-container {
-                            margin-top: 32px;
-                        }
+                        @media screen and (min-width: 600px) {
+                            #eapps-countdown-timer-1 .eapps-countdown-timer-item-value {
+                                font-size: 54px;
+                                line-height: 60px;
+                                padding: 8px 12px;
+                                border-radius: 8px;
+                            }
 
-                        #eapps-countdown-timer-1 .eapps-countdown-timer-button-container {
-                            margin-top: 51px;
+                            #eapps-countdown-timer-1 .eapps-countdown-timer-item-group {
+                                margin: 0 17px;
+                            }
                         }
 
                         @keyframes eapps-countdown-timer-1-flip-down-front {
@@ -444,16 +451,16 @@
                     </style>
                 </div>
                 <div data-tf-widget="mwXqFACc" data-tf-iframe-props="title=Azqira" data-tf-medium="snippet"
-                    data-tf-on-submit="redirect" class="w-full h-[34.375rem]"></div>
-                <div class="flex items-center">
-                    <p class="text-xl mr-3">Stay updated by joining Azqira’s <a href="https://t.me/+c3Q8cd5V2vM4ZTRk"
-                            class="underline">Telegram Group</a></p>
-                    <a href="https://t.me/+c3Q8cd5V2vM4ZTRk">
-                        <img src="assets/images/icons/telegram-black.svg" width="30.24" height="30.24">
+                    data-tf-on-submit="redirect" class="w-full h-[17.688rem]"></div>
+                <div class="md:text-xl text-sm text-center">
+                    Stay updated by joining Azqira’s <br class="sm:hidden">
+                    <a href="https://t.me/+c3Q8cd5V2vM4ZTRk" class="underline">Telegram Group</a>
+                    <a href="https://t.me/+c3Q8cd5V2vM4ZTRk" class="md:ml-3 ml-1">
+                        <img src="assets/images/icons/telegram-black.svg" width="17.44" height="17.44" class="inline md:w-[30px] md:h-[30px]">
                     </a>
                 </div>
             </section>
-            <footer class="bg-cold-gray py-[3.5rem] px-6 relative">
+            <footer class="bg-cold-gray py-12 px-6 relative">
                 <div class="bg-white rounded-b-[1.25rem] absolute top-0 left-0 w-full h-3"></div>
                 <div
                     class="max-w-7xl mx-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-between items-center">
