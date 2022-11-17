@@ -3442,6 +3442,14 @@ video {
   left: 5%;
 }
 
+.top-\[1\.75rem\] {
+  top: 1.75rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -3937,6 +3945,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-0 {
   --tw-scale-x: 0;
   --tw-scale-y: 0;
@@ -3970,6 +3983,10 @@ video {
 
 .grid-cols-\[1fr_1fr\] {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-cols-\[1fr\] {
+  grid-template-columns: 1fr;
 }
 
 .flex-col {
@@ -4012,6 +4029,11 @@ video {
 
 .gap-y-\[1\.875rem\] {
   row-gap: 1.875rem;
+}
+
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -4168,6 +4190,10 @@ video {
   border-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-\[\#222222\] {
   --tw-border-opacity: 1;
   border-color: rgb(34 34 34 / var(--tw-border-opacity));
@@ -4181,6 +4207,10 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(32 32 40 / var(--tw-border-opacity));
+}
+
+.border-\[rgba\(0\2c 0\2c 0\2c \.15\)\] {
+  border-color: rgba(0,0,0,.15);
 }
 
 .bg-cold-gray {
@@ -4408,6 +4438,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.py-\[1\.25rem\] {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-\[3\.5rem\] {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -4518,6 +4553,14 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4528,6 +4571,10 @@ video {
 
 .align-top {
   vertical-align: top;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-aktiv {
@@ -4678,6 +4725,10 @@ video {
   line-height: 0.813rem;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
 .leading-\[2\.125rem\] {
   line-height: 2.125rem;
 }
@@ -4700,6 +4751,10 @@ video {
 
 .tracking-\[0\.01em\] {
   letter-spacing: 0.01em;
+}
+
+.tracking-\[-\.07em\] {
+  letter-spacing: -.07em;
 }
 
 .text-black {
@@ -4777,6 +4832,11 @@ video {
   color: rgb(166 166 166 / var(--tw-text-opacity));
 }
 
+.text-\[\#757575\] {
+  --tw-text-opacity: 1;
+  color: rgb(117 117 117 / var(--tw-text-opacity));
+}
+
 .text-boulder {
   --tw-text-opacity: 1;
   color: rgb(116 116 116 / var(--tw-text-opacity));
@@ -4823,6 +4883,12 @@ video {
 
 .transition-width {
   transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -5670,13 +5736,8 @@ a.eapps-countdown-timer-inner {
   color: rgb(0, 0, 0);
 }
 
-.typeform-widget:before {
-  content: '';
-  width: 100px;
-  height: 500px;
-  position: absolute;
-  background: #FFF;
-  left: 94%;
+.faq-container.active .faq-button {
+  transform: rotate(-90deg);
 }
 
 .before\:absolute::before {
@@ -5769,6 +5830,24 @@ a.eapps-countdown-timer-inner {
   .sm\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:leading-normal {
+    line-height: 1.5;
+  }
+
+  .sm\:tracking-\[-\.07em\] {
+    letter-spacing: -.07em;
   }
 }
 
@@ -6132,6 +6211,10 @@ a.eapps-countdown-timer-inner {
     padding-bottom: 6.6rem;
   }
 
+  .md\:pt-40 {
+    padding-top: 10rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -6347,6 +6430,10 @@ a.eapps-countdown-timer-inner {
 
   .lg\:grid-cols-\[1fr_1fr_1fr_1fr\] {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .lg\:grid-cols-\[1fr_1fr\] {
+    grid-template-columns: 1fr 1fr;
   }
 
   .lg\:flex-row {

@@ -2617,11 +2617,6 @@ a.eapps-countdown-timer-inner {
     color: rgb(0, 0, 0);
 }
 
-.typeform-widget:before {
-    content: '';
-    width: 100px;
-    height: 500px;
-    position: absolute;
-    background: #FFF;
-    left: 94%;
+.faq-container.active .faq-button {
+    transform: rotate(-90deg);
 }
