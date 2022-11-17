@@ -3640,6 +3640,10 @@ video {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-\[17\.688rem\] {
   height: 17.688rem;
 }
@@ -3666,10 +3670,6 @@ video {
 
 .h-\[44rem\] {
   height: 44rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-\[1\.875rem\] {
@@ -3830,6 +3830,10 @@ video {
   max-width: 82.5rem;
 }
 
+.max-w-\[60rem\] {
+  max-width: 60rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -3904,10 +3908,6 @@ video {
 
 .max-w-\[17rem\] {
   max-width: 17rem;
-}
-
-.max-w-\[57rem\] {
-  max-width: 57rem;
 }
 
 .flex-1 {
@@ -4132,6 +4132,11 @@ video {
   border-radius: 0.313rem;
 }
 
+.rounded-b-\[1\.875rem\] {
+  border-bottom-right-radius: 1.875rem;
+  border-bottom-left-radius: 1.875rem;
+}
+
 .rounded-b-\[1\.25rem\] {
   border-bottom-right-radius: 1.25rem;
   border-bottom-left-radius: 1.25rem;
@@ -4178,16 +4183,6 @@ video {
   border-color: rgb(32 32 40 / var(--tw-border-opacity));
 }
 
-.bg-\[\#F2EFE8\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 239 232 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 32 40 / var(--tw-bg-opacity));
-}
-
 .bg-cold-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 24 / var(--tw-bg-opacity));
@@ -4196,6 +4191,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(253 253 253 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F2EFE8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 239 232 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 40 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#222222\] {
@@ -4251,6 +4256,10 @@ video {
 
 .bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
   background-color: rgba(0,0,0,0.3);
+}
+
+.bg-\[url\(\.\.\/images\/junglepng\.parspng\.png\)\] {
+  background-image: url(../images/junglepng.parspng.png);
 }
 
 .bg-\[url\(\'\.\.\/images\/snake-line\.png\'\)\] {
@@ -4309,9 +4318,9 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-\[3\.5rem\] {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .px-4 {
@@ -4399,6 +4408,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.py-\[3\.5rem\] {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -4412,8 +4426,8 @@ video {
   padding-top: 1.25rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pb-\[1\.438rem\] {
@@ -4476,8 +4490,8 @@ video {
   padding-top: 1rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pb-32 {
@@ -5654,6 +5668,15 @@ a.eapps-countdown-timer-inner {
 #eapps-countdown-timer-1 .eapps-countdown-timer-header-title,
 #eapps-countdown-timer-1 .eapps-countdown-timer-bar-close {
   color: rgb(0, 0, 0);
+}
+
+.typeform-widget:before {
+  content: '';
+  width: 100px;
+  height: 500px;
+  position: absolute;
+  background: #FFF;
+  left: 94%;
 }
 
 .before\:absolute::before {

@@ -2616,3 +2616,12 @@ a.eapps-countdown-timer-inner {
 #eapps-countdown-timer-1 .eapps-countdown-timer-bar-close {
     color: rgb(0, 0, 0);
 }
+
+.typeform-widget:before {
+    content: '';
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    background: #FFF;
+    left: 94%;
+}
