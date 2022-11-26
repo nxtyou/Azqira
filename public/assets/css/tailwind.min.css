@@ -3624,6 +3624,14 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-\[1\.135rem\] {
+  margin-top: 1.135rem;
+}
+
 .block {
   display: block;
 }
@@ -3732,6 +3740,10 @@ video {
   height: 184px;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3812,6 +3824,10 @@ video {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .max-w-\[82\.5rem\] {
@@ -3986,6 +4002,22 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-\[1\.175rem\] {
+  gap: 1.175rem;
+}
+
+.gap-28 {
+  gap: 7rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-x-12 {
@@ -4433,6 +4465,16 @@ video {
   padding-bottom: 7rem;
 }
 
+.px-\[2\.5rem\] {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-\[2\.313rem\] {
+  padding-top: 2.313rem;
+  padding-bottom: 2.313rem;
+}
+
 .pt-\[1\.25rem\] {
   padding-top: 1.25rem;
 }
@@ -4537,6 +4579,10 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4625,12 +4671,29 @@ video {
   font-size: 1.375rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[0\.818rem\] {
+  font-size: 0.818rem;
+}
+
+.text-\[0\.938rem\] {
+  font-size: 0.938rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -4713,6 +4776,14 @@ video {
   line-height: 1.125;
 }
 
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-\[3rem\] {
+  line-height: 3rem;
+}
+
 .tracking-\[-0\.02em\] {
   letter-spacing: -0.02em;
 }
@@ -4731,6 +4802,10 @@ video {
 
 .tracking-\[0\.01em\] {
   letter-spacing: 0.01em;
+}
+
+.tracking-\[-2px\] {
+  letter-spacing: -2px;
 }
 
 .text-black {
@@ -4816,6 +4891,11 @@ video {
 .text-boulder {
   --tw-text-opacity: 1;
   color: rgb(116 116 116 / var(--tw-text-opacity));
+}
+
+.text-\[\#4B5262\] {
+  --tw-text-opacity: 1;
+  color: rgb(75 82 98 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -5754,6 +5834,10 @@ a.eapps-countdown-timer-inner {
     margin-top: 0px;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -6122,6 +6206,16 @@ a.eapps-countdown-timer-inner {
     padding-right: 2.5rem;
   }
 
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:pt-6 {
     padding-top: 1.5rem;
   }
@@ -6172,6 +6266,10 @@ a.eapps-countdown-timer-inner {
 
   .md\:pb-\[6\.6rem\] {
     padding-bottom: 6.6rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .md\:text-left {
@@ -6238,6 +6336,10 @@ a.eapps-countdown-timer-inner {
     font-size: 2rem;
   }
 
+  .md\:font-medium {
+    font-weight: 500;
+  }
+
   .md\:leading-\[4\.028rem\] {
     line-height: 4.028rem;
   }
@@ -6266,9 +6368,18 @@ a.eapps-countdown-timer-inner {
     line-height: 1.833rem;
   }
 
+  .md\:leading-relaxed {
+    line-height: 1.625;
+  }
+
   .md\:text-\[\#AEAEAF\] {
     --tw-text-opacity: 1;
     color: rgb(174 174 175 / var(--tw-text-opacity));
+  }
+
+  .md\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(32 32 40 / var(--tw-text-opacity));
   }
 
   .md\:before\:top-\[inherit\]::before {
@@ -6407,6 +6518,22 @@ a.eapps-countdown-timer-inner {
     align-items: flex-start;
   }
 
+  .lg\:gap-28 {
+    gap: 7rem;
+  }
+
+  .lg\:gap-32 {
+    gap: 8rem;
+  }
+
+  .lg\:gap-36 {
+    gap: 9rem;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -6469,6 +6596,14 @@ a.eapps-countdown-timer-inner {
 
   .lg\:pb-2 {
     padding-bottom: 0.5rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .lg\:text-\[4rem\] {
