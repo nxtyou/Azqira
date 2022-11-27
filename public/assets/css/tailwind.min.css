@@ -3450,6 +3450,18 @@ video {
   left: 5%;
 }
 
+.-top-\[1px\] {
+  top: -1px;
+}
+
+.-top-\[-1\] {
+  top: 1;
+}
+
+.-top-\[-1px\] {
+  top: 1px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -3536,6 +3548,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mt-\[3\.5rem\] {
   margin-top: 3.5rem;
 }
@@ -3620,16 +3636,12 @@ video {
   margin-top: 3.2rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.mt-\[1\.135rem\] {
+  margin-top: 1.135rem;
 }
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.mt-\[1\.135rem\] {
-  margin-top: 1.135rem;
 }
 
 .block {
@@ -3838,6 +3850,10 @@ video {
   max-width: 48rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -3856,10 +3872,6 @@ video {
 
 .max-w-6xl {
   max-width: 72rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
 }
 
 .max-w-\[19rem\] {
@@ -4004,20 +4016,12 @@ video {
   gap: 0.75rem;
 }
 
-.gap-\[1\.175rem\] {
-  gap: 1.175rem;
-}
-
-.gap-28 {
-  gap: 7rem;
-}
-
-.gap-32 {
-  gap: 8rem;
-}
-
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-\[1\.175rem\] {
+  gap: 1.175rem;
 }
 
 .gap-x-12 {
@@ -4129,16 +4133,16 @@ video {
   border-radius: 9999px;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-\[0\.313rem\] {
   border-radius: 0.313rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-md {
@@ -4230,9 +4234,9 @@ video {
   background-color: rgb(242 239 232 / var(--tw-bg-opacity));
 }
 
-.bg-green-500 {
+.bg-greenish {
   --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+  background-color: rgb(39 209 126 / var(--tw-bg-opacity));
 }
 
 .bg-cold-gray {
@@ -4253,11 +4257,6 @@ video {
 .bg-\[\#050505\] {
   --tw-bg-opacity: 1;
   background-color: rgb(5 5 5 / var(--tw-bg-opacity));
-}
-
-.bg-greenish {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 209 126 / var(--tw-bg-opacity));
 }
 
 .bg-pampas {
@@ -4370,6 +4369,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .py-\[3\.5rem\] {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -4398,11 +4402,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .py-6 {
@@ -4671,25 +4670,16 @@ video {
   font-size: 1.375rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-\[0\.818rem\] {
-  font-size: 0.818rem;
-}
-
 .text-\[0\.938rem\] {
   font-size: 0.938rem;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
@@ -4702,6 +4692,10 @@ video {
 
 .leading-\[3\.125rem\] {
   line-height: 3.125rem;
+}
+
+.leading-\[1\.125\] {
+  line-height: 1.125;
 }
 
 .leading-\[2\.125rem\] {
@@ -4770,10 +4764,6 @@ video {
 
 .leading-\[0\.813rem\] {
   line-height: 0.813rem;
-}
-
-.leading-\[1\.125\] {
-  line-height: 1.125;
 }
 
 .leading-relaxed {
@@ -6220,16 +6210,16 @@ a.eapps-countdown-timer-inner {
     padding-top: 1.5rem;
   }
 
-  .md\:pt-56 {
-    padding-top: 14rem;
-  }
-
   .md\:pl-3 {
     padding-left: 0.75rem;
   }
 
   .md\:pt-40 {
     padding-top: 10rem;
+  }
+
+  .md\:pt-56 {
+    padding-top: 14rem;
   }
 
   .md\:pt-36 {
@@ -6289,9 +6279,13 @@ a.eapps-countdown-timer-inner {
     line-height: 2rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-base {
@@ -6304,6 +6298,11 @@ a.eapps-countdown-timer-inner {
     line-height: 1.75rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-\[0\.813rem\] {
     font-size: 0.813rem;
   }
@@ -6311,11 +6310,6 @@ a.eapps-countdown-timer-inner {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-\[2\.438rem\] {
@@ -6330,10 +6324,6 @@ a.eapps-countdown-timer-inner {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-\[2rem\] {
-    font-size: 2rem;
   }
 
   .md\:font-medium {
@@ -6518,18 +6508,6 @@ a.eapps-countdown-timer-inner {
     align-items: flex-start;
   }
 
-  .lg\:gap-28 {
-    gap: 7rem;
-  }
-
-  .lg\:gap-32 {
-    gap: 8rem;
-  }
-
-  .lg\:gap-36 {
-    gap: 9rem;
-  }
-
   .lg\:gap-24 {
     gap: 6rem;
   }
@@ -6543,6 +6521,11 @@ a.eapps-countdown-timer-inner {
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:px-10 {
@@ -6563,11 +6546,6 @@ a.eapps-countdown-timer-inner {
   .lg\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .lg\:pt-\[12\.5rem\] {
