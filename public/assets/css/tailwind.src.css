@@ -17,36 +17,6 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Aktiv Grotesk Corp";
-    src: url("../fonts/AktivGroteskCorp-Italic.eot");
-    src: local("AktivGroteskCorp-Italic"), url("../fonts/AktivGroteskCorp-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-Italic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-Italic.woff") format("woff"),
-        url("../fonts/AktivGroteskCorp-Italic.ttf") format("truetype");
-    font-weight: normal;
-    font-display: swap;
-    font-style: italic;
-} */
-
-/* @font-face {
-    font-family: "Aktiv Grotesk Corp";
-    src: url("../fonts/AktivGroteskCorp-LightItalic.eot");
-    src: local("AktivGroteskCorp-LightItalic"), url("../fonts/AktivGroteskCorp-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-LightItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-LightItalic.woff") format("woff"),
-        url("../fonts/AktivGroteskCorp-LightItalic.ttf") format("truetype");
-    font-weight: 300;
-    font-display: swap;
-    font-style: italic;
-} */
-
-/* @font-face {
-    font-family: "Aktiv Grotesk Corp";
-    src: url("../fonts/AktivGroteskCorp-MediumItalic.eot");
-    src: local("AktivGroteskCorp-MediumItalic"), url("../fonts/AktivGroteskCorp-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-MediumItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-MediumItalic.woff") format("woff"),
-        url("../fonts/AktivGroteskCorp-MediumItalic.ttf") format("truetype");
-    font-weight: 500;
-    font-display: swap;
-    font-style: italic;
-} */
-
 @font-face {
     font-family: "Aktiv Grotesk Corp";
     src: url("../fonts/AktivGroteskCorp-Light.eot");
@@ -67,16 +37,6 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: "Aktiv Grotesk Corp";
-    src: url("../fonts/AktivGroteskCorp-BoldItalic.eot");
-    src: local("AktivGroteskCorp-BoldItalic"), url("../fonts/AktivGroteskCorp-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp-BoldItalic.woff2") format("woff2"), url("../fonts/AktivGroteskCorp-BoldItalic.woff") format("woff"),
-        url("../fonts/AktivGroteskCorp-BoldItalic.ttf") format("truetype");
-    font-weight: bold;
-    font-display: swap;
-    font-style: italic;
-} */
-
 /* raleway-700 - latin */
 @font-face {
     font-family: 'Raleway';
@@ -96,6 +56,10 @@
         /* Safari, Android, iOS */
         url('../fonts/raleway-v28-latin-700.svg#Raleway') format('svg');
     /* Legacy iOS */
+}
+
+html {
+    scroll-behavior: smooth
 }
 
 @tailwind base;
