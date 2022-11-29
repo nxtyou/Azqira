@@ -3940,6 +3940,10 @@ video {
   cursor: pointer;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .grid-cols-\[1fr\] {
   grid-template-columns: 1fr;
 }
@@ -4538,6 +4542,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4832,11 +4840,6 @@ video {
 .text-silver-chalice {
   --tw-text-opacity: 1;
   color: rgb(166 166 166 / var(--tw-text-opacity));
-}
-
-.text-boulder {
-  --tw-text-opacity: 1;
-  color: rgb(116 116 116 / var(--tw-text-opacity));
 }
 
 .text-\[\#4B5262\] {
