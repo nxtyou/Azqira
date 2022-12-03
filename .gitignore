@@ -4,3 +4,4 @@ server/
 .netlify
 .vscode
 .idea
+checkout-backend-node/
