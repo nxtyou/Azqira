@@ -1770,7 +1770,7 @@ html {
     color: black;
 }
 
-.mySwiper2 .swiper-pagination-bullet {
+.mySwiper2 .swiper-pagination-bullet, .mySwiper7 .swiper-pagination-bullet {
     height: 32px;
 }
 

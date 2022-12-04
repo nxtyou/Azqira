@@ -30,6 +30,37 @@
         },
     });
 
+    const swiperIcons = ["assets/images/packages/card-icon-1.png","assets/images/packages/card-icon-2.png","assets/images/packages/card-icon-3.png","assets/images/packages/card-icon-4.png"]
+
+    var swiper7 = new Swiper(".mySwiper7", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                // return '<span class="' + className + '">' + (index + 1) + "</span>";
+
+                return `
+                    <div class="text-xs font-medium relative cursor-pointer ${className} w-auto h-auto bg-inherit h-[32px] rotating-bullet">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="asset-data__count__svg" version="1.1" width="32px" height="32px" class="opacity-0">
+                        <circle cx="50%" cy="50%" fill="#181818" r="12" stroke="#E2E2E2" stroke-width="1px"></circle> 
+                        <circle cx="50%" cy="50%" fill="transparent" r="12" stroke="#27D17F" stroke-dasharray="75" stroke-dashoffset="75" stroke-linecap="butt" stroke-width="1px"></circle>
+                    </svg>
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-silver-chalice"><img src=${swiperIcons[index]}></span>
+                    </div>
+                `;
+            },
+        },
+        navigation: {
+            nextEl: ".cards-2-button-next",
+            prevEl: ".cards-2-button-prev",
+        },
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
+
     var swiper1 = new Swiper(".mySwiper1", {
         slidesPerView: 1,
         spaceBetween: 32,
@@ -196,7 +227,10 @@ function handleModalOpener() {
 }
 
 const modal = document.getElementById("modal")
-document.getElementById("modal-close").addEventListener("click", () => { modal.classList.add("hidden") })
+
+if (document.getElementById("modal-close")) {
+    document.getElementById("modal-close").addEventListener("click", () => { modal.classList.add("hidden") })
+}
 
 const modalOpener = document.querySelectorAll("[data-modals]")
 
