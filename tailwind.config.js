@@ -46,6 +46,9 @@ module.exports = {
             },
             transitionDuration: {
               '1000': '1000ms',
+            },
+            screens: {
+                'wide': {'min': '1920px'},
             }
         },
     },
